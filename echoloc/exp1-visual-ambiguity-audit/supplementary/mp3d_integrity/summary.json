@@ -1,0 +1,10 @@
+{
+  "n": 960,
+  "rgb_exists": 960,
+  "pose_chunk_exact": 960,
+  "gt_on_free": 960,
+  "scan_nohit_over_015": 93,
+  "scan_nohit_over_015_fraction": 0.096875,
+  "median_nohit": 0.00045,
+  "p95_nohit": 0.29605499999999985
+}

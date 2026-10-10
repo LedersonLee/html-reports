@@ -1,0 +1,548 @@
+[
+  {
+    "dataset": "gibson",
+    "backbone": "disco_rrp",
+    "label": "limited_structural_fov",
+    "n": 116,
+    "fraction": 0.021323529411764706
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "disco_rrp",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 3957,
+    "fraction": 0.727389705882353
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "disco_rrp",
+    "label": "representation_failure",
+    "n": 780,
+    "fraction": 0.14338235294117646
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "disco_rrp",
+    "label": "single_hypothesis",
+    "n": 28,
+    "fraction": 0.005147058823529412
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "disco_rrp",
+    "label": "symmetric_or_similar_room",
+    "n": 559,
+    "fraction": 0.10275735294117647
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "f3loc_mono",
+    "label": "limited_structural_fov",
+    "n": 122,
+    "fraction": 0.022426470588235294
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "f3loc_mono",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 3969,
+    "fraction": 0.7295955882352941
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "f3loc_mono",
+    "label": "representation_failure",
+    "n": 657,
+    "fraction": 0.12077205882352941
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "f3loc_mono",
+    "label": "single_hypothesis",
+    "n": 66,
+    "fraction": 0.01213235294117647
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "f3loc_mono",
+    "label": "symmetric_or_similar_room",
+    "n": 626,
+    "fraction": 0.1150735294117647
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "unloc",
+    "label": "limited_structural_fov",
+    "n": 135,
+    "fraction": 0.024816176470588234
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "unloc",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 1446,
+    "fraction": 0.26580882352941176
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "unloc",
+    "label": "representation_failure",
+    "n": 585,
+    "fraction": 0.10753676470588236
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "unloc",
+    "label": "single_hypothesis",
+    "n": 1504,
+    "fraction": 0.27647058823529413
+  },
+  {
+    "dataset": "gibson",
+    "backbone": "unloc",
+    "label": "symmetric_or_similar_room",
+    "n": 1770,
+    "fraction": 0.32536764705882354
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "disco_rrp",
+    "label": "limited_structural_fov",
+    "n": 15,
+    "fraction": 0.015625
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "disco_rrp",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 535,
+    "fraction": 0.5572916666666666
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "disco_rrp",
+    "label": "representation_failure",
+    "n": 295,
+    "fraction": 0.3072916666666667
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "disco_rrp",
+    "label": "scan_hole_artifact",
+    "n": 93,
+    "fraction": 0.096875
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "disco_rrp",
+    "label": "single_hypothesis",
+    "n": 2,
+    "fraction": 0.0020833333333333333
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "disco_rrp",
+    "label": "symmetric_or_similar_room",
+    "n": 20,
+    "fraction": 0.020833333333333332
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "f3loc_mono",
+    "label": "limited_structural_fov",
+    "n": 27,
+    "fraction": 0.028125
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "f3loc_mono",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 559,
+    "fraction": 0.5822916666666667
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "f3loc_mono",
+    "label": "representation_failure",
+    "n": 222,
+    "fraction": 0.23125
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "f3loc_mono",
+    "label": "scan_hole_artifact",
+    "n": 93,
+    "fraction": 0.096875
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "f3loc_mono",
+    "label": "single_hypothesis",
+    "n": 7,
+    "fraction": 0.007291666666666667
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "f3loc_mono",
+    "label": "symmetric_or_similar_room",
+    "n": 52,
+    "fraction": 0.05416666666666667
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "unloc",
+    "label": "limited_structural_fov",
+    "n": 32,
+    "fraction": 0.03333333333333333
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "unloc",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 240,
+    "fraction": 0.25
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "unloc",
+    "label": "representation_failure",
+    "n": 172,
+    "fraction": 0.17916666666666667
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "unloc",
+    "label": "scan_hole_artifact",
+    "n": 93,
+    "fraction": 0.096875
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "unloc",
+    "label": "single_hypothesis",
+    "n": 167,
+    "fraction": 0.17395833333333333
+  },
+  {
+    "dataset": "mp3d",
+    "backbone": "unloc",
+    "label": "symmetric_or_similar_room",
+    "n": 256,
+    "fraction": 0.26666666666666666
+  },
+  {
+    "dataset": "replica",
+    "backbone": "disco_rrp",
+    "label": "limited_structural_fov",
+    "n": 6,
+    "fraction": 0.01
+  },
+  {
+    "dataset": "replica",
+    "backbone": "disco_rrp",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 395,
+    "fraction": 0.6583333333333333
+  },
+  {
+    "dataset": "replica",
+    "backbone": "disco_rrp",
+    "label": "representation_failure",
+    "n": 71,
+    "fraction": 0.11833333333333333
+  },
+  {
+    "dataset": "replica",
+    "backbone": "disco_rrp",
+    "label": "single_hypothesis",
+    "n": 5,
+    "fraction": 0.008333333333333333
+  },
+  {
+    "dataset": "replica",
+    "backbone": "disco_rrp",
+    "label": "symmetric_or_similar_room",
+    "n": 123,
+    "fraction": 0.205
+  },
+  {
+    "dataset": "replica",
+    "backbone": "f3loc_mono",
+    "label": "limited_structural_fov",
+    "n": 14,
+    "fraction": 0.023333333333333334
+  },
+  {
+    "dataset": "replica",
+    "backbone": "f3loc_mono",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 372,
+    "fraction": 0.62
+  },
+  {
+    "dataset": "replica",
+    "backbone": "f3loc_mono",
+    "label": "representation_failure",
+    "n": 82,
+    "fraction": 0.13666666666666666
+  },
+  {
+    "dataset": "replica",
+    "backbone": "f3loc_mono",
+    "label": "single_hypothesis",
+    "n": 16,
+    "fraction": 0.02666666666666667
+  },
+  {
+    "dataset": "replica",
+    "backbone": "f3loc_mono",
+    "label": "symmetric_or_similar_room",
+    "n": 116,
+    "fraction": 0.19333333333333333
+  },
+  {
+    "dataset": "replica",
+    "backbone": "unloc",
+    "label": "limited_structural_fov",
+    "n": 24,
+    "fraction": 0.04
+  },
+  {
+    "dataset": "replica",
+    "backbone": "unloc",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 93,
+    "fraction": 0.155
+  },
+  {
+    "dataset": "replica",
+    "backbone": "unloc",
+    "label": "representation_failure",
+    "n": 43,
+    "fraction": 0.07166666666666667
+  },
+  {
+    "dataset": "replica",
+    "backbone": "unloc",
+    "label": "single_hypothesis",
+    "n": 194,
+    "fraction": 0.3233333333333333
+  },
+  {
+    "dataset": "replica",
+    "backbone": "unloc",
+    "label": "symmetric_or_similar_room",
+    "n": 246,
+    "fraction": 0.41
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "disco_rrp",
+    "label": "limited_structural_fov",
+    "n": 124,
+    "fraction": 0.027796458193230216
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "disco_rrp",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 2955,
+    "fraction": 0.6624075319435104
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "disco_rrp",
+    "label": "representation_failure",
+    "n": 1260,
+    "fraction": 0.2824478816408877
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "disco_rrp",
+    "label": "single_hypothesis",
+    "n": 9,
+    "fraction": 0.0020174848688634837
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "disco_rrp",
+    "label": "symmetric_or_similar_room",
+    "n": 113,
+    "fraction": 0.02533064335350818
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "f3loc_mono",
+    "label": "limited_structural_fov",
+    "n": 143,
+    "fraction": 0.03205559291638646
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "f3loc_mono",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 3053,
+    "fraction": 0.6843757005155795
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "f3loc_mono",
+    "label": "representation_failure",
+    "n": 1169,
+    "fraction": 0.2620488679668236
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "f3loc_mono",
+    "label": "single_hypothesis",
+    "n": 9,
+    "fraction": 0.0020174848688634837
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "f3loc_mono",
+    "label": "symmetric_or_similar_room",
+    "n": 87,
+    "fraction": 0.019502353732347006
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "unloc",
+    "label": "limited_structural_fov",
+    "n": 151,
+    "fraction": 0.03384891279982067
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "unloc",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 2135,
+    "fraction": 0.4785922438915041
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "unloc",
+    "label": "representation_failure",
+    "n": 838,
+    "fraction": 0.18785025778973324
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "unloc",
+    "label": "single_hypothesis",
+    "n": 306,
+    "fraction": 0.06859448554135844
+  },
+  {
+    "dataset": "s3d",
+    "backbone": "unloc",
+    "label": "symmetric_or_similar_room",
+    "n": 1031,
+    "fraction": 0.2311140999775835
+  },
+  {
+    "dataset": "zind",
+    "backbone": "disco_rrp",
+    "label": "limited_structural_fov",
+    "n": 85,
+    "fraction": 0.020833333333333332
+  },
+  {
+    "dataset": "zind",
+    "backbone": "disco_rrp",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 2768,
+    "fraction": 0.6784313725490196
+  },
+  {
+    "dataset": "zind",
+    "backbone": "disco_rrp",
+    "label": "representation_failure",
+    "n": 824,
+    "fraction": 0.2019607843137255
+  },
+  {
+    "dataset": "zind",
+    "backbone": "disco_rrp",
+    "label": "single_hypothesis",
+    "n": 64,
+    "fraction": 0.01568627450980392
+  },
+  {
+    "dataset": "zind",
+    "backbone": "disco_rrp",
+    "label": "symmetric_or_similar_room",
+    "n": 339,
+    "fraction": 0.08308823529411764
+  },
+  {
+    "dataset": "zind",
+    "backbone": "f3loc_mono",
+    "label": "limited_structural_fov",
+    "n": 88,
+    "fraction": 0.021568627450980392
+  },
+  {
+    "dataset": "zind",
+    "backbone": "f3loc_mono",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 2767,
+    "fraction": 0.678186274509804
+  },
+  {
+    "dataset": "zind",
+    "backbone": "f3loc_mono",
+    "label": "representation_failure",
+    "n": 769,
+    "fraction": 0.18848039215686274
+  },
+  {
+    "dataset": "zind",
+    "backbone": "f3loc_mono",
+    "label": "single_hypothesis",
+    "n": 86,
+    "fraction": 0.02107843137254902
+  },
+  {
+    "dataset": "zind",
+    "backbone": "f3loc_mono",
+    "label": "symmetric_or_similar_room",
+    "n": 370,
+    "fraction": 0.09068627450980392
+  },
+  {
+    "dataset": "zind",
+    "backbone": "unloc",
+    "label": "limited_structural_fov",
+    "n": 97,
+    "fraction": 0.023774509803921567
+  },
+  {
+    "dataset": "zind",
+    "backbone": "unloc",
+    "label": "repetitive_corridor_or_similar_layout",
+    "n": 1491,
+    "fraction": 0.3654411764705882
+  },
+  {
+    "dataset": "zind",
+    "backbone": "unloc",
+    "label": "representation_failure",
+    "n": 703,
+    "fraction": 0.17230392156862745
+  },
+  {
+    "dataset": "zind",
+    "backbone": "unloc",
+    "label": "single_hypothesis",
+    "n": 618,
+    "fraction": 0.1514705882352941
+  },
+  {
+    "dataset": "zind",
+    "backbone": "unloc",
+    "label": "symmetric_or_similar_room",
+    "n": 1171,
+    "fraction": 0.2870098039215686
+  }
+]

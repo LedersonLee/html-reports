@@ -1,0 +1,527 @@
+[
+  {
+    "label": "close_up_wall_view",
+    "file": "cards/close_up_wall_view_01_s3d_scene_03342_00004.png",
+    "dataset": "s3d",
+    "scene": "scene_03342",
+    "pose": 4,
+    "metrics": {
+      "q90": 0.7721937417984008,
+      "median": 0.7604318559169769,
+      "spread": 0.01909763257431388,
+      "left": 0.5395529866218567,
+      "center": 0.7669634819030762,
+      "right": 0.7551037073135376
+    }
+  },
+  {
+    "label": "close_up_wall_view",
+    "file": "cards/close_up_wall_view_02_zind_0660_f1_00020.png",
+    "dataset": "zind",
+    "scene": "0660_f1",
+    "pose": 20,
+    "metrics": {
+      "q90": 0.10031343698501587,
+      "median": 0.09538863971829414,
+      "spread": 0.06142546112694548,
+      "left": 0.09089801460504532,
+      "center": 0.09538863599300385,
+      "right": 0.10034602880477905
+    }
+  },
+  {
+    "label": "close_up_wall_view",
+    "file": "cards/close_up_wall_view_03_s3d_scene_03446_00002.png",
+    "dataset": "s3d",
+    "scene": "scene_03446",
+    "pose": 2,
+    "metrics": {
+      "q90": 1.1225814938545227,
+      "median": 1.036794662475586,
+      "spread": 0.10050581711673924,
+      "left": 1.1231951713562012,
+      "center": 1.036794662475586,
+      "right": 0.959367036819458
+    }
+  },
+  {
+    "label": "close_up_wall_view",
+    "file": "cards/close_up_wall_view_04_zind_1177_f3_00005.png",
+    "dataset": "zind",
+    "scene": "1177_f3",
+    "pose": 5,
+    "metrics": {
+      "q90": 0.1060885451734066,
+      "median": 0.09966790303587914,
+      "spread": 0.0757605132524188,
+      "left": 0.09394635260105133,
+      "center": 0.09966790676116943,
+      "right": 0.10613156855106354
+    }
+  },
+  {
+    "label": "close_up_wall_view",
+    "file": "cards/close_up_wall_view_05_s3d_scene_03445_00006.png",
+    "dataset": "s3d",
+    "scene": "scene_03445",
+    "pose": 6,
+    "metrics": {
+      "q90": 1.1331461548805237,
+      "median": 0.9943224191665649,
+      "spread": 0.22492348322097844,
+      "left": 1.1333720684051514,
+      "center": 0.9943224191665649,
+      "right": 0.38759833574295044
+    }
+  },
+  {
+    "label": "corridor_aligned_view",
+    "file": "cards/corridor_aligned_view_01_s3d_scene_03433_00011.png",
+    "dataset": "s3d",
+    "scene": "scene_03433",
+    "pose": 11,
+    "metrics": {
+      "q90": 11.302369213104248,
+      "median": 1.0154791474342346,
+      "spread": 6.833982262514342,
+      "left": 0.6975966691970825,
+      "center": 11.307073593139648,
+      "right": 0.9295715093612671
+    }
+  },
+  {
+    "label": "corridor_aligned_view",
+    "file": "cards/corridor_aligned_view_02_zind_0302_f1_00000.png",
+    "dataset": "zind",
+    "scene": "0302_f1",
+    "pose": 0,
+    "metrics": {
+      "q90": 12.910218429565429,
+      "median": 1.7961196303367615,
+      "spread": 6.067982343266901,
+      "left": 0.4762471914291382,
+      "center": 12.910191535949707,
+      "right": 0.507206380367279
+    }
+  },
+  {
+    "label": "corridor_aligned_view",
+    "file": "cards/corridor_aligned_view_03_s3d_scene_03388_00021.png",
+    "dataset": "s3d",
+    "scene": "scene_03388",
+    "pose": 21,
+    "metrics": {
+      "q90": 9.886567783355712,
+      "median": 1.3151971101760864,
+      "spread": 6.36317733245606,
+      "left": 0.9312530159950256,
+      "center": 9.525897979736328,
+      "right": 0.6908849477767944
+    }
+  },
+  {
+    "label": "corridor_aligned_view",
+    "file": "cards/corridor_aligned_view_04_zind_0010_f1_00012.png",
+    "dataset": "zind",
+    "scene": "0010_f1",
+    "pose": 12,
+    "metrics": {
+      "q90": 9.488969326019287,
+      "median": 0.8337103128433228,
+      "spread": 3.264762601718783,
+      "left": 0.5330861210823059,
+      "center": 9.457834243774414,
+      "right": 0.49775320291519165
+    }
+  },
+  {
+    "label": "corridor_aligned_view",
+    "file": "cards/corridor_aligned_view_05_s3d_scene_03274_00004.png",
+    "dataset": "s3d",
+    "scene": "scene_03274",
+    "pose": 4,
+    "metrics": {
+      "q90": 11.81826286315918,
+      "median": 1.9112441539764404,
+      "spread": 3.642505341278606,
+      "left": 1.3025212287902832,
+      "center": 11.821584701538086,
+      "right": 1.1178574562072754
+    }
+  },
+  {
+    "label": "extended_structural_view",
+    "file": "cards/extended_structural_view_01_s3d_scene_03433_00011.png",
+    "dataset": "s3d",
+    "scene": "scene_03433",
+    "pose": 11,
+    "metrics": {
+      "q90": 11.302369213104248,
+      "median": 1.0154791474342346,
+      "spread": 6.833982262514342,
+      "left": 0.6975966691970825,
+      "center": 11.307073593139648,
+      "right": 0.9295715093612671
+    }
+  },
+  {
+    "label": "extended_structural_view",
+    "file": "cards/extended_structural_view_02_zind_0302_f1_00000.png",
+    "dataset": "zind",
+    "scene": "0302_f1",
+    "pose": 0,
+    "metrics": {
+      "q90": 12.910218429565429,
+      "median": 1.7961196303367615,
+      "spread": 6.067982343266901,
+      "left": 0.4762471914291382,
+      "center": 12.910191535949707,
+      "right": 0.507206380367279
+    }
+  },
+  {
+    "label": "extended_structural_view",
+    "file": "cards/extended_structural_view_03_s3d_scene_03388_00021.png",
+    "dataset": "s3d",
+    "scene": "scene_03388",
+    "pose": 21,
+    "metrics": {
+      "q90": 9.886567783355712,
+      "median": 1.3151971101760864,
+      "spread": 6.36317733245606,
+      "left": 0.9312530159950256,
+      "center": 9.525897979736328,
+      "right": 0.6908849477767944
+    }
+  },
+  {
+    "label": "extended_structural_view",
+    "file": "cards/extended_structural_view_04_zind_0010_f1_00012.png",
+    "dataset": "zind",
+    "scene": "0010_f1",
+    "pose": 12,
+    "metrics": {
+      "q90": 9.488969326019287,
+      "median": 0.8337103128433228,
+      "spread": 3.264762601718783,
+      "left": 0.5330861210823059,
+      "center": 9.457834243774414,
+      "right": 0.49775320291519165
+    }
+  },
+  {
+    "label": "extended_structural_view",
+    "file": "cards/extended_structural_view_05_s3d_scene_03274_00004.png",
+    "dataset": "s3d",
+    "scene": "scene_03274",
+    "pose": 4,
+    "metrics": {
+      "q90": 11.81826286315918,
+      "median": 1.9112441539764404,
+      "spread": 3.642505341278606,
+      "left": 1.3025212287902832,
+      "center": 11.821584701538086,
+      "right": 1.1178574562072754
+    }
+  },
+  {
+    "label": "low_structural_variation",
+    "file": "cards/low_structural_variation_01_s3d_scene_03265_00003.png",
+    "dataset": "s3d",
+    "scene": "scene_03265",
+    "pose": 3,
+    "metrics": {
+      "q90": 5.023701095581055,
+      "median": 5.004455089569092,
+      "spread": 0.004728967405084067,
+      "left": 4.993625640869141,
+      "center": 5.012909889221191,
+      "right": 4.109314918518066
+    }
+  },
+  {
+    "label": "low_structural_variation",
+    "file": "cards/low_structural_variation_02_zind_0444_f2_00024.png",
+    "dataset": "zind",
+    "scene": "0444_f2",
+    "pose": 24,
+    "metrics": {
+      "q90": 1.4772995591163636,
+      "median": 1.477232038974762,
+      "spread": 5.7174350012978214e-05,
+      "left": 1.4195432662963867,
+      "center": 1.4772522449493408,
+      "right": 1.4762275218963623
+    }
+  },
+  {
+    "label": "low_structural_variation",
+    "file": "cards/low_structural_variation_03_s3d_scene_03363_00008.png",
+    "dataset": "s3d",
+    "scene": "scene_03363",
+    "pose": 8,
+    "metrics": {
+      "q90": 1.4840133666992188,
+      "median": 1.4671666622161865,
+      "spread": 0.014233613590947818,
+      "left": 1.4841222763061523,
+      "center": 1.4692981243133545,
+      "right": 1.4524168968200684
+    }
+  },
+  {
+    "label": "low_structural_variation",
+    "file": "cards/low_structural_variation_04_zind_0684_f1_00012.png",
+    "dataset": "zind",
+    "scene": "0684_f1",
+    "pose": 12,
+    "metrics": {
+      "q90": 2.302909588813782,
+      "median": 2.302624821662903,
+      "spread": 0.00015461422108109638,
+      "left": 2.3029112815856934,
+      "center": 2.3026247024536133,
+      "right": 1.8649567365646362
+    }
+  },
+  {
+    "label": "low_structural_variation",
+    "file": "cards/low_structural_variation_05_s3d_scene_03434_00013.png",
+    "dataset": "s3d",
+    "scene": "scene_03434",
+    "pose": 13,
+    "metrics": {
+      "q90": 2.9880022048950194,
+      "median": 2.9381282329559326,
+      "spread": 0.015860655534838876,
+      "left": 2.988247871398926,
+      "center": 2.953646659851074,
+      "right": 2.915738582611084
+    }
+  },
+  {
+    "label": "descriptor_collision_candidate",
+    "file": "cards/descriptor_collision_candidate_01_s3d_scene_03373_00014.png",
+    "dataset": "s3d",
+    "scene": "scene_03373",
+    "pose": 14,
+    "metrics": {
+      "q90": 2.5175660133361815,
+      "median": 1.9278190732002258,
+      "spread": 0.3003986558385864,
+      "left": 1.8008275032043457,
+      "center": 2.47578501701355,
+      "right": 1.4701682329177856
+    }
+  },
+  {
+    "label": "descriptor_collision_candidate",
+    "file": "cards/descriptor_collision_candidate_02_zind_0966_f1_00000.png",
+    "dataset": "zind",
+    "scene": "0966_f1",
+    "pose": 0,
+    "metrics": {
+      "q90": 1.570948100090027,
+      "median": 1.3873384594917297,
+      "spread": 0.3787090918988092,
+      "left": 1.5722578763961792,
+      "center": 1.387338399887085,
+      "right": 0.56076979637146
+    }
+  },
+  {
+    "label": "descriptor_collision_candidate",
+    "file": "cards/descriptor_collision_candidate_03_s3d_scene_03373_00009.png",
+    "dataset": "s3d",
+    "scene": "scene_03373",
+    "pose": 9,
+    "metrics": {
+      "q90": 2.4863492012023927,
+      "median": 1.902723252773285,
+      "spread": 0.30060480416901,
+      "left": 1.7362868785858154,
+      "center": 2.4931674003601074,
+      "right": 1.4942831993103027
+    }
+  },
+  {
+    "label": "descriptor_collision_candidate",
+    "file": "cards/descriptor_collision_candidate_04_zind_0966_f1_00003.png",
+    "dataset": "zind",
+    "scene": "0966_f1",
+    "pose": 3,
+    "metrics": {
+      "q90": 1.5076677083969117,
+      "median": 1.3869732022285461,
+      "spread": 0.30797874509729434,
+      "left": 1.5084937810897827,
+      "center": 1.3869731426239014,
+      "right": 0.6116376519203186
+    }
+  },
+  {
+    "label": "descriptor_collision_candidate",
+    "file": "cards/descriptor_collision_candidate_05_s3d_scene_03272_00007.png",
+    "dataset": "s3d",
+    "scene": "scene_03272",
+    "pose": 7,
+    "metrics": {
+      "q90": 2.2749425411224364,
+      "median": 1.7653541564941406,
+      "spread": 0.4041692529555272,
+      "left": 1.0849995613098145,
+      "center": 2.1600770950317383,
+      "right": 1.7796789407730103
+    }
+  },
+  {
+    "label": "yaw_only_error",
+    "file": "cards/yaw_only_error_01_s3d_scene_03271_00004.png",
+    "dataset": "s3d",
+    "scene": "scene_03271",
+    "pose": 4,
+    "metrics": {
+      "q90": 3.613679528236389,
+      "median": 2.7659122943878174,
+      "spread": 0.2966405188070039,
+      "left": 2.5915963649749756,
+      "center": 3.615372657775879,
+      "right": 2.068927764892578
+    }
+  },
+  {
+    "label": "yaw_only_error",
+    "file": "cards/yaw_only_error_02_zind_0990_f2_00019.png",
+    "dataset": "zind",
+    "scene": "0990_f2",
+    "pose": 19,
+    "metrics": {
+      "q90": 4.587440776824951,
+      "median": 2.2093863487243652,
+      "spread": 1.0357744599614238,
+      "left": 4.228363990783691,
+      "center": 3.2708888053894043,
+      "right": 1.3151451349258423
+    }
+  },
+  {
+    "label": "yaw_only_error",
+    "file": "cards/yaw_only_error_03_s3d_scene_03267_00025.png",
+    "dataset": "s3d",
+    "scene": "scene_03267",
+    "pose": 25,
+    "metrics": {
+      "q90": 8.661866378784179,
+      "median": 3.6554940938949585,
+      "spread": 1.492550393847845,
+      "left": 2.9319839477539062,
+      "center": 8.667314529418945,
+      "right": 3.6607208251953125
+    }
+  },
+  {
+    "label": "yaw_only_error",
+    "file": "cards/yaw_only_error_04_zind_1207_f2_00016.png",
+    "dataset": "zind",
+    "scene": "1207_f2",
+    "pose": 16,
+    "metrics": {
+      "q90": 1.8854902029037475,
+      "median": 1.1967556476593018,
+      "spread": 0.8696943276069979,
+      "left": 1.1125810146331787,
+      "center": 1.8462753295898438,
+      "right": 0.41725587844848633
+    }
+  },
+  {
+    "label": "yaw_only_error",
+    "file": "cards/yaw_only_error_05_s3d_scene_03477_00001.png",
+    "dataset": "s3d",
+    "scene": "scene_03477",
+    "pose": 1,
+    "metrics": {
+      "q90": 13.04973201751709,
+      "median": 2.942070960998535,
+      "spread": 1.617236925382133,
+      "left": 2.3466124534606934,
+      "center": 13.058012962341309,
+      "right": 0.7012509107589722
+    }
+  },
+  {
+    "label": "spatial_error",
+    "file": "cards/spatial_error_01_s3d_scene_03261_00036.png",
+    "dataset": "s3d",
+    "scene": "scene_03261",
+    "pose": 36,
+    "metrics": {
+      "q90": 3.89242436885833,
+      "median": 1.2794700264930725,
+      "spread": 0.9967896591554669,
+      "left": 4.402667045593262,
+      "center": 1.2794699668884277,
+      "right": 0.7682700157165527
+    }
+  },
+  {
+    "label": "spatial_error",
+    "file": "cards/spatial_error_02_zind_1328_f1_00019.png",
+    "dataset": "zind",
+    "scene": "1328_f1",
+    "pose": 19,
+    "metrics": {
+      "q90": 2.281740593910217,
+      "median": 1.5806658864021301,
+      "spread": 0.39761343613543304,
+      "left": 1.2211487293243408,
+      "center": 2.2848892211914062,
+      "right": 1.3264364004135132
+    }
+  },
+  {
+    "label": "spatial_error",
+    "file": "cards/spatial_error_03_s3d_scene_03261_00000.png",
+    "dataset": "s3d",
+    "scene": "scene_03261",
+    "pose": 0,
+    "metrics": {
+      "q90": 6.616950559616089,
+      "median": 5.802936553955078,
+      "spread": 0.15248429698824287,
+      "left": 4.044704914093018,
+      "center": 6.385886192321777,
+      "right": 5.538119792938232
+    }
+  },
+  {
+    "label": "spatial_error",
+    "file": "cards/spatial_error_04_zind_0438_f1_00020.png",
+    "dataset": "zind",
+    "scene": "0438_f1",
+    "pose": 20,
+    "metrics": {
+      "q90": 1.4167898178100586,
+      "median": 1.1591103076934814,
+      "spread": 0.2297039530316902,
+      "left": 1.1069865226745605,
+      "center": 1.2475614547729492,
+      "right": 0.9981890916824341
+    }
+  },
+  {
+    "label": "spatial_error",
+    "file": "cards/spatial_error_05_s3d_scene_03261_00030.png",
+    "dataset": "s3d",
+    "scene": "scene_03261",
+    "pose": 30,
+    "metrics": {
+      "q90": 6.808056497573853,
+      "median": 4.3100831508636475,
+      "spread": 1.037341727828703,
+      "left": 1.4638221263885498,
+      "center": 6.7265167236328125,
+      "right": 4.353609085083008
+    }
+  }
+]

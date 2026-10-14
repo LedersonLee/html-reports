@@ -8,14 +8,16 @@
 <main class="wrap">
   <h1>HSSD scene5 · frozen W<sub>B</sub> zero-shot likelihood</h1>
   <p class="sub">Pooled Replica+MP3D projection, 1746 → 128, then L1. Object overlays are off by default in each viewer.</p>
-  <p class="note">Each page has 80 queries, 36 yaw settings, object-free and object-scene conditions, likelihood colorbar, and separate GT (solid blue) / prediction (dashed green) markers. The retained-object overlay exactly matches the selected clutter condition.</p>
+  <p class="note">Each page has 80 queries, 36 yaw settings, likelihood colorbar, and separate GT (solid blue) / prediction (dashed green) markers. At 0%, both displayed conditions are the same independently rendered structural-stage control; 25–100% compare a furnished observation with the object-free floorplan. The retained-object overlay exactly matches the selected clutter condition.</p>
   <section class="grid">
+    <article class="card"><h2>0% retained · 0 objects</h2><p class="small">Independent structural-stage control; both input labels intentionally resolve to the same control.</p><div class="links"><a href="objects-0/exp4/">Experiment 4 · X,Z</a><a href="objects-0/exp5/">Experiment 5 · yaw</a></div></article>
     <article class="card"><h2>100% retained · 196 objects</h2><p class="small">Original furnished scene.</p><div class="links"><a href="objects-100/exp4/">Experiment 4 · X,Z</a><a href="objects-100/exp5/">Experiment 5 · yaw</a></div></article>
     <article class="card"><h2>75% retained · 147 objects</h2><p class="small">Stable derived subset.</p><div class="links"><a href="objects-75/exp4/">Experiment 4 · X,Z</a><a href="objects-75/exp5/">Experiment 5 · yaw</a></div></article>
     <article class="card"><h2>50% retained · 98 objects</h2><p class="small">Stable derived subset.</p><div class="links"><a href="objects-50/exp4/">Experiment 4 · X,Z</a><a href="objects-50/exp5/">Experiment 5 · yaw</a></div></article>
     <article class="card"><h2>25% retained · 49 objects</h2><p class="small">Stable derived subset.</p><div class="links"><a href="objects-25/exp4/">Experiment 4 · X,Z</a><a href="objects-25/exp5/">Experiment 5 · yaw</a></div></article>
   </section>
   <table><thead><tr><th>Retained objects</th><th>Exp4 L1 R@1</th><th>Exp4 W<sub>B</sub> R@1</th><th>Exp5 L1 exact yaw</th><th>Exp5 W<sub>B</sub> exact yaw</th></tr></thead><tbody>
+    <tr><td>0% (stage control)</td><td>99.583%</td><td>88.646%</td><td>31.458%</td><td>20.174%</td></tr>
     <tr><td>100%</td><td>1.042%</td><td>0.625%</td><td>5.833%</td><td>4.097%</td></tr>
     <tr><td>75%</td><td>1.042%</td><td>0.590%</td><td>6.250%</td><td>4.861%</td></tr>
     <tr><td>50%</td><td>9.375%</td><td>4.375%</td><td>5.833%</td><td>5.278%</td></tr>

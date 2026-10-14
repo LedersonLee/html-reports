@@ -2,41 +2,41 @@
   "scene_id": "104862687_172226883",
   "seed": 104862687,
   "coordinate_frame": "HSSD native X/Z horizontal, Y vertical",
-  "stage_points": 2053,
+  "stage_points": 100000,
   "conditions": {
     "original": {
       "label": "Original furnished (100%)",
       "objects": "objects/original.ply",
       "object_count": 196,
-      "object_points": 95446,
+      "object_points": 274400,
       "source": "HSSD scenes"
     },
     "official_uncluttered": {
       "label": "Official HSSD uncluttered",
       "objects": "objects/official_uncluttered.ply",
       "object_count": 142,
-      "object_points": 74060,
+      "object_points": 198800,
       "source": "HSSD scenes-uncluttered"
     },
     "derived_75": {
       "label": "Derived clutter 75%",
       "objects": "objects/derived_75.ply",
       "object_count": 147,
-      "object_points": 72577,
+      "object_points": 205800,
       "source": "derived_original_room_stratified"
     },
     "derived_50": {
       "label": "Derived clutter 50%",
       "objects": "objects/derived_50.ply",
       "object_count": 98,
-      "object_points": 45469,
+      "object_points": 137200,
       "source": "derived_original_room_stratified"
     },
     "derived_25": {
       "label": "Derived clutter 25%",
       "objects": "objects/derived_25.ply",
       "object_count": 49,
-      "object_points": 21220,
+      "object_points": 68600,
       "source": "derived_original_room_stratified"
     },
     "derived_0": {
@@ -49,6 +49,6 @@
   },
   "sampling": {
     "stage_limit": 100000,
-    "per_object_limit": 700
+    "per_object_limit": 1400
   }
 }

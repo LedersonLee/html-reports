@@ -1,0 +1,201 @@
+{
+  "scene_id": "104862687_172226883",
+  "variant": "furnished",
+  "renderer": "Habitat-Sim GPU",
+  "resolution": 640,
+  "texture_status": "partial: stage JPEG textures render; KTX2 furniture textures unavailable because this runtime lacks KtxImporter",
+  "records": [
+    {
+      "region": "bedroom",
+      "yaw_deg": 0,
+      "image": "bedroom_yaw000.png",
+      "pose_xyz_m": [
+        -7.16354513168335,
+        1.5,
+        -4.260970115661621
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "bedroom",
+      "yaw_deg": 90,
+      "image": "bedroom_yaw090.png",
+      "pose_xyz_m": [
+        -7.16354513168335,
+        1.5,
+        -4.260970115661621
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "bedroom",
+      "yaw_deg": 180,
+      "image": "bedroom_yaw180.png",
+      "pose_xyz_m": [
+        -7.16354513168335,
+        1.5,
+        -4.260970115661621
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "bedroom",
+      "yaw_deg": 270,
+      "image": "bedroom_yaw270.png",
+      "pose_xyz_m": [
+        -7.16354513168335,
+        1.5,
+        -4.260970115661621
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "kitchen",
+      "yaw_deg": 0,
+      "image": "kitchen_yaw000.png",
+      "pose_xyz_m": [
+        -7.190442085266113,
+        1.5,
+        1.0022159814834595
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "kitchen",
+      "yaw_deg": 90,
+      "image": "kitchen_yaw090.png",
+      "pose_xyz_m": [
+        -7.190442085266113,
+        1.5,
+        1.0022159814834595
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "kitchen",
+      "yaw_deg": 180,
+      "image": "kitchen_yaw180.png",
+      "pose_xyz_m": [
+        -7.190442085266113,
+        1.5,
+        1.0022159814834595
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "kitchen",
+      "yaw_deg": 270,
+      "image": "kitchen_yaw270.png",
+      "pose_xyz_m": [
+        -7.190442085266113,
+        1.5,
+        1.0022159814834595
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "living room",
+      "yaw_deg": 0,
+      "image": "living_room_yaw000.png",
+      "pose_xyz_m": [
+        -3.1289000511169434,
+        1.5,
+        -0.6871799826622009
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "living room",
+      "yaw_deg": 90,
+      "image": "living_room_yaw090.png",
+      "pose_xyz_m": [
+        -3.1289000511169434,
+        1.5,
+        -0.6871799826622009
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "living room",
+      "yaw_deg": 180,
+      "image": "living_room_yaw180.png",
+      "pose_xyz_m": [
+        -3.1289000511169434,
+        1.5,
+        -0.6871799826622009
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    },
+    {
+      "region": "living room",
+      "yaw_deg": 270,
+      "image": "living_room_yaw270.png",
+      "pose_xyz_m": [
+        -3.1289000511169434,
+        1.5,
+        -0.6871799826622009
+      ],
+      "rgb_shape": [
+        640,
+        640,
+        4
+      ],
+      "rgb_finite": true
+    }
+  ]
+}

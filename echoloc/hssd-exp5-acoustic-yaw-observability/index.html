@@ -1,0 +1,21 @@
+<!doctype html><meta charset=utf-8><title>HSSD Exp. 5</title>
+<style>body{margin:0;background:#101827;color:#e5edf7;font:14px system-ui,sans-serif}main{max-width:1450px;margin:auto;padding:24px}h1{margin:0 0 8px}.sub{color:#aebed2}select{background:#1d2a3b;color:#fff;border:1px solid #52657c;border-radius:5px;padding:7px;margin:3px}.grid{display:grid;grid-template-columns:minmax(520px,1.6fr) minmax(330px,1fr);gap:18px;align-items:start;margin-top:16px}.card{background:#172233;border:1px solid #30445b;border-radius:10px;padding:14px}canvas{width:100%;display:block;background:#0b1220;border-radius:6px}.legend{display:flex;gap:14px;margin:8px 0;color:#cbd7e8}.blue{color:#58a6ff}.green{color:#3ddc84}.bar{height:12px;background:linear-gradient(90deg,#3b4cc0,#f7f7f7,#b40426);border-radius:3px}.metric{line-height:1.65;white-space:pre-line}.warn{color:#ffd166}</style>
+
+<main><h1>HSSD · Experiment 5 — fixed X,Z yaw likelihood</h1><div class=sub>Primary matcher: STFT-band L1 · location is fixed at the selected query · likelihood is normalized per observation for display only.</div>
+<div class=card><label>Condition <select id=cond></select></label><label>Query <select id=query></select></label><label>Ground-truth yaw <select id=yaw></select></label></div>
+<div class=grid><section class=card><canvas id=polar width=800 height=700></canvas><div class=legend><span class=blue>● GT · blue</span><span class=green>● Predicted · green</span><span>Radial likelihood: low → high</span></div><div class=bar></div></section><section class=card><h3 id=label></h3><div id=metric class=metric></div><hr><div id=summary class=metric></div><p class=warn>Fixed-X,Z test isolates orientation: no global location retrieval is performed in this view.</p></section></div></main>
+<script>
+const C=['object_free_observation_vs_object_free_fp','object_scene_observation_vs_object_free_fp'];let D;const $=id=>document.getElementById(id);function bytes(s){let b=atob(s),a=new Uint8Array(b.length);for(let i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a}
+async function load(){D=await fetch('data/payload.json.gz').then(async r=>JSON.parse(await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).text()));for(let c of C)$('cond').add(new Option(D.labels[c],c));D.queries.forEach((q,i)=>$('query').add(new Option(`${i+1}. ${q.id} (${q.stratum})`,i)));for(let y=0;y<36;y++)$('yaw').add(new Option(`${y*10}°`,y));$('cond').value=C[1];['cond','query','yaw'].forEach(id=>$(id).onchange=draw);draw()}
+function line(ctx,cx,cy,a,l,col,dash=false){ctx.save();ctx.strokeStyle=col;ctx.lineWidth=4;if(dash)ctx.setLineDash([7,5]);ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(a)*l,cy+Math.sin(a)*l);ctx.stroke();ctx.restore()}
+function draw(){let c=$('cond').value,qi=+$('query').value,gy=+$('yaw').value,q=D.queries[qi],v=bytes(D.posteriors[c]),row=(qi*36+gy)*36,ctx=$('polar').getContext('2d'),W=ctx.canvas.width,H=ctx.canvas.height,cx=W/2,cy=H/2,R=260;ctx.clearRect(0,0,W,H);ctx.strokeStyle='#52657c';ctx.lineWidth=1;[.25,.5,.75,1].forEach(t=>{ctx.beginPath();ctx.arc(cx,cy,R*t,0,7);ctx.stroke()});for(let i=0;i<36;i++){let a=i*Math.PI/18- Math.PI/2,r=30+v[row+i]/255*R;ctx.strokeStyle=`hsl(${240-v[row+i]/255*240} 70% 58%)`;ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(cx+Math.cos(a)*30,cy+Math.sin(a)*30);ctx.lineTo(cx+Math.cos(a)*r,cy+Math.sin(a)*r);ctx.stroke()}let m=D.metrics[c][qi][gy],ga=gy*Math.PI/18-Math.PI/2,pa=m.top1_yaw_bin*Math.PI/18-Math.PI/2;line(ctx,cx,cy,ga,R*.95,'#58a6ff');line(ctx,cx,cy,pa,R*.84,'#3ddc84',true);ctx.fillStyle='#e5edf7';ctx.fillText('0°',cx-8,cy-R-10);ctx.fillText('90°',cx+R+10,cy+4);ctx.fillText('180°',cx-14,cy+R+20);ctx.fillText('270°',cx-R-35,cy+4);$('label').textContent=D.labels[c];$('metric').textContent=`Query ${q.id} · GT yaw ${gy*10}°
+Predicted yaw: ${m.top1_yaw_deg}°
+GT rank: ${m.gt_rank} / 36
+Circular yaw error: ${m.top1_yaw_error_deg.toFixed(0)}°
+Top-1 margin: ${m.top1_top2_margin.toFixed(3)}`;let z=D.summary[c];$('summary').textContent=`All 2,880 query-yaw pairs
+Exact yaw: ${(z.top1_exact_yaw*100).toFixed(2)}%
+Recall@3: ${(z.recall_at_3*100).toFixed(2)}%
+Recall@5: ${(z.recall_at_5*100).toFixed(2)}%
+Median circular error: ${z.median_circular_error_deg.toFixed(1)}°
+Within 30°: ${(z.within_30deg*100).toFixed(2)}%`}
+load();</script>

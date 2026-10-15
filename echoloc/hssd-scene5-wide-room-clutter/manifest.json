@@ -1,0 +1,751 @@
+{
+  "scene_id": "104862687_172226883",
+  "renderer": "Habitat-Sim KTX2",
+  "resolution": 960,
+  "camera_height_m": 1.5,
+  "hfov_deg": 110.0,
+  "conditions": [
+    [
+      "100",
+      "furnished"
+    ],
+    [
+      "75",
+      "furnished"
+    ],
+    [
+      "50",
+      "furnished"
+    ],
+    [
+      "25",
+      "furnished"
+    ],
+    [
+      "0",
+      "stage"
+    ]
+  ],
+  "records": [
+    {
+      "room_id": "bedroom_01",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -8.041275,
+        1.5,
+        -4.26097
+      ],
+      "target_xz_m": [
+        -7.163545,
+        -4.26097
+      ],
+      "yaw_deg": 270.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.682509183883667,
+      "condition": "100",
+      "scene_kind": "furnished",
+      "image": "bedroom_01__100.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "closet_01",
+      "label": "closet",
+      "pose_xyz_m": [
+        -7.921342,
+        1.5,
+        -2.065315
+      ],
+      "target_xz_m": [
+        -8.06644,
+        -2.065315
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.740659236907959,
+      "condition": "100",
+      "scene_kind": "furnished",
+      "image": "closet_01__100.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "living_room_01",
+      "label": "living room",
+      "pose_xyz_m": [
+        -3.76738,
+        1.5,
+        -0.0487
+      ],
+      "target_xz_m": [
+        -3.1288999999999993,
+        -0.68718
+      ],
+      "yaw_deg": 45.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.968424081802368,
+      "condition": "100",
+      "scene_kind": "furnished",
+      "image": "living_room_01__100.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bathroom_01",
+      "label": "bathroom",
+      "pose_xyz_m": [
+        -2.697637,
+        1.5,
+        3.200777
+      ],
+      "target_xz_m": [
+        -2.6976366666666665,
+        2.676716666666667
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.265776777267456,
+      "condition": "100",
+      "scene_kind": "furnished",
+      "image": "bathroom_01__100.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_02",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -3.00068,
+        1.5,
+        -5.1387
+      ],
+      "target_xz_m": [
+        -3.00068,
+        -4.26097
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.59381365776062,
+      "condition": "100",
+      "scene_kind": "furnished",
+      "image": "bedroom_02__100.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "kitchen_01",
+      "label": "kitchen",
+      "pose_xyz_m": [
+        -6.24571,
+        1.5,
+        1.002216
+      ],
+      "target_xz_m": [
+        -7.190442,
+        1.002216
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 3.127358455657959,
+      "condition": "100",
+      "scene_kind": "furnished",
+      "image": "kitchen_01__100.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_01",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -8.041275,
+        1.5,
+        -4.26097
+      ],
+      "target_xz_m": [
+        -7.163545,
+        -4.26097
+      ],
+      "yaw_deg": 270.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.682509183883667,
+      "condition": "75",
+      "scene_kind": "furnished",
+      "image": "bedroom_01__75.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "closet_01",
+      "label": "closet",
+      "pose_xyz_m": [
+        -7.921342,
+        1.5,
+        -2.065315
+      ],
+      "target_xz_m": [
+        -8.06644,
+        -2.065315
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.740659236907959,
+      "condition": "75",
+      "scene_kind": "furnished",
+      "image": "closet_01__75.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "living_room_01",
+      "label": "living room",
+      "pose_xyz_m": [
+        -3.76738,
+        1.5,
+        -0.0487
+      ],
+      "target_xz_m": [
+        -3.1288999999999993,
+        -0.68718
+      ],
+      "yaw_deg": 45.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.968424081802368,
+      "condition": "75",
+      "scene_kind": "furnished",
+      "image": "living_room_01__75.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bathroom_01",
+      "label": "bathroom",
+      "pose_xyz_m": [
+        -2.697637,
+        1.5,
+        3.200777
+      ],
+      "target_xz_m": [
+        -2.6976366666666665,
+        2.676716666666667
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.265776777267456,
+      "condition": "75",
+      "scene_kind": "furnished",
+      "image": "bathroom_01__75.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_02",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -3.00068,
+        1.5,
+        -5.1387
+      ],
+      "target_xz_m": [
+        -3.00068,
+        -4.26097
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.59381365776062,
+      "condition": "75",
+      "scene_kind": "furnished",
+      "image": "bedroom_02__75.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "kitchen_01",
+      "label": "kitchen",
+      "pose_xyz_m": [
+        -6.24571,
+        1.5,
+        1.002216
+      ],
+      "target_xz_m": [
+        -7.190442,
+        1.002216
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 3.127358455657959,
+      "condition": "75",
+      "scene_kind": "furnished",
+      "image": "kitchen_01__75.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_01",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -8.041275,
+        1.5,
+        -4.26097
+      ],
+      "target_xz_m": [
+        -7.163545,
+        -4.26097
+      ],
+      "yaw_deg": 270.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.682509183883667,
+      "condition": "50",
+      "scene_kind": "furnished",
+      "image": "bedroom_01__50.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "closet_01",
+      "label": "closet",
+      "pose_xyz_m": [
+        -7.921342,
+        1.5,
+        -2.065315
+      ],
+      "target_xz_m": [
+        -8.06644,
+        -2.065315
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.740659236907959,
+      "condition": "50",
+      "scene_kind": "furnished",
+      "image": "closet_01__50.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "living_room_01",
+      "label": "living room",
+      "pose_xyz_m": [
+        -3.76738,
+        1.5,
+        -0.0487
+      ],
+      "target_xz_m": [
+        -3.1288999999999993,
+        -0.68718
+      ],
+      "yaw_deg": 45.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.968424081802368,
+      "condition": "50",
+      "scene_kind": "furnished",
+      "image": "living_room_01__50.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bathroom_01",
+      "label": "bathroom",
+      "pose_xyz_m": [
+        -2.697637,
+        1.5,
+        3.200777
+      ],
+      "target_xz_m": [
+        -2.6976366666666665,
+        2.676716666666667
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.265776777267456,
+      "condition": "50",
+      "scene_kind": "furnished",
+      "image": "bathroom_01__50.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_02",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -3.00068,
+        1.5,
+        -5.1387
+      ],
+      "target_xz_m": [
+        -3.00068,
+        -4.26097
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.59381365776062,
+      "condition": "50",
+      "scene_kind": "furnished",
+      "image": "bedroom_02__50.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "kitchen_01",
+      "label": "kitchen",
+      "pose_xyz_m": [
+        -6.24571,
+        1.5,
+        1.002216
+      ],
+      "target_xz_m": [
+        -7.190442,
+        1.002216
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 3.127358455657959,
+      "condition": "50",
+      "scene_kind": "furnished",
+      "image": "kitchen_01__50.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_01",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -8.041275,
+        1.5,
+        -4.26097
+      ],
+      "target_xz_m": [
+        -7.163545,
+        -4.26097
+      ],
+      "yaw_deg": 270.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.682509183883667,
+      "condition": "25",
+      "scene_kind": "furnished",
+      "image": "bedroom_01__25.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "closet_01",
+      "label": "closet",
+      "pose_xyz_m": [
+        -7.921342,
+        1.5,
+        -2.065315
+      ],
+      "target_xz_m": [
+        -8.06644,
+        -2.065315
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.740659236907959,
+      "condition": "25",
+      "scene_kind": "furnished",
+      "image": "closet_01__25.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "living_room_01",
+      "label": "living room",
+      "pose_xyz_m": [
+        -3.76738,
+        1.5,
+        -0.0487
+      ],
+      "target_xz_m": [
+        -3.1288999999999993,
+        -0.68718
+      ],
+      "yaw_deg": 45.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.968424081802368,
+      "condition": "25",
+      "scene_kind": "furnished",
+      "image": "living_room_01__25.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bathroom_01",
+      "label": "bathroom",
+      "pose_xyz_m": [
+        -2.697637,
+        1.5,
+        3.200777
+      ],
+      "target_xz_m": [
+        -2.6976366666666665,
+        2.676716666666667
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.265776777267456,
+      "condition": "25",
+      "scene_kind": "furnished",
+      "image": "bathroom_01__25.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_02",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -3.00068,
+        1.5,
+        -5.1387
+      ],
+      "target_xz_m": [
+        -3.00068,
+        -4.26097
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.59381365776062,
+      "condition": "25",
+      "scene_kind": "furnished",
+      "image": "bedroom_02__25.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "kitchen_01",
+      "label": "kitchen",
+      "pose_xyz_m": [
+        -6.24571,
+        1.5,
+        1.002216
+      ],
+      "target_xz_m": [
+        -7.190442,
+        1.002216
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 3.127358455657959,
+      "condition": "25",
+      "scene_kind": "furnished",
+      "image": "kitchen_01__25.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_01",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -8.041275,
+        1.5,
+        -4.26097
+      ],
+      "target_xz_m": [
+        -7.163545,
+        -4.26097
+      ],
+      "yaw_deg": 270.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.682509183883667,
+      "condition": "0",
+      "scene_kind": "stage",
+      "image": "bedroom_01__0.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "closet_01",
+      "label": "closet",
+      "pose_xyz_m": [
+        -7.921342,
+        1.5,
+        -2.065315
+      ],
+      "target_xz_m": [
+        -8.06644,
+        -2.065315
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.740659236907959,
+      "condition": "0",
+      "scene_kind": "stage",
+      "image": "closet_01__0.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "living_room_01",
+      "label": "living room",
+      "pose_xyz_m": [
+        -3.76738,
+        1.5,
+        -0.0487
+      ],
+      "target_xz_m": [
+        -3.1288999999999993,
+        -0.68718
+      ],
+      "yaw_deg": 45.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.968424081802368,
+      "condition": "0",
+      "scene_kind": "stage",
+      "image": "living_room_01__0.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bathroom_01",
+      "label": "bathroom",
+      "pose_xyz_m": [
+        -2.697637,
+        1.5,
+        3.200777
+      ],
+      "target_xz_m": [
+        -2.6976366666666665,
+        2.676716666666667
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.265776777267456,
+      "condition": "0",
+      "scene_kind": "stage",
+      "image": "bathroom_01__0.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "bedroom_02",
+      "label": "bedroom",
+      "pose_xyz_m": [
+        -3.00068,
+        1.5,
+        -5.1387
+      ],
+      "target_xz_m": [
+        -3.00068,
+        -4.26097
+      ],
+      "yaw_deg": 180.0,
+      "hfov_deg": 110.0,
+      "selection_score": 2.59381365776062,
+      "condition": "0",
+      "scene_kind": "stage",
+      "image": "bedroom_02__0.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    },
+    {
+      "room_id": "kitchen_01",
+      "label": "kitchen",
+      "pose_xyz_m": [
+        -6.24571,
+        1.5,
+        1.002216
+      ],
+      "target_xz_m": [
+        -7.190442,
+        1.002216
+      ],
+      "yaw_deg": 0.0,
+      "hfov_deg": 110.0,
+      "selection_score": 3.127358455657959,
+      "condition": "0",
+      "scene_kind": "stage",
+      "image": "kitchen_01__0.png",
+      "rgb_shape": [
+        960,
+        960,
+        3
+      ]
+    }
+  ]
+}

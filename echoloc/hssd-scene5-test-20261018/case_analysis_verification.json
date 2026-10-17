@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "condition_criterion_pairs": 96,
+  "numerical_predictions_changed": false,
+  "per_query_sha256": "0329e7bb9847e01c529bec5441a836c704dc67e5d62432d54c0006bf3628c7da",
+  "checkpoint_sha256": "b9626c0f8b5411f365d6151e7a760b8e79fffe5e6ee2abced6caaa7705a1c36f"
+}

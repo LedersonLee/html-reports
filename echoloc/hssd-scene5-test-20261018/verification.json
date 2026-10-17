@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "official_queries": 488,
+  "positions": 61,
+  "world_yaws": 8,
+  "physical_observed_rirs": 244,
+  "exact_rgb_rir_xyz_verified": true,
+  "exact_observation_heading_recipes_verified": true,
+  "candidate_bank_regenerated": false,
+  "replayed_rows": 26352,
+  "splits_unchanged": true,
+  "checkpoint_sha256": "b9626c0f8b5411f365d6151e7a760b8e79fffe5e6ee2abced6caaa7705a1c36f"
+}

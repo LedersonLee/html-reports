@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "scene_id": "104862687_172226883",
+  "split": "test",
+  "shared_baseline_data": true,
+  "sample_rate_hz": 48000,
+  "array_layout": [
+    "microphone",
+    "sample"
+  ],
+  "microphone_count": 6,
+  "ring_radius_m": 0.05,
+  "fp_bank": {
+    "path": "FP/104862687_172226883",
+    "candidate_records": "FP/104862687_172226883/candidate_records.json",
+    "geometry": "object-free 3D structural stage, not extruded canonical raster",
+    "positions": 7144,
+    "physical_arrays": 42864,
+    "acoustic_base_yaws_deg": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "derived_yaws_per_position": 36,
+    "source_world_y_m_range": [
+      1.7,
+      1.895681
+    ]
+  },
+  "official_observations": {
+    "path": "Observed/test/104862687_172226883",
+    "schedule": "Observed/test/104862687_172226883/schedule.json",
+    "portable_rgb_rir_pairs": "manifests/v4_test_104862687_172226883_rgb_rir_pairs.json",
+    "positions": 61,
+    "physical_arrays": 244,
+    "rgb_queries": 488,
+    "acoustic_base_yaws_deg": [
+      0,
+      15,
+      30,
+      45
+    ],
+    "source_world_y_m": 1.5
+  },
+  "legacy_observations": {
+    "path": "Archive/probe80/104862687_172226883",
+    "positions_per_condition": 80,
+    "conditions": [
+      "clutter_000",
+      "clutter_025",
+      "clutter_050",
+      "clutter_075",
+      "clutter_100",
+      "original_furnished"
+    ],
+    "physical_arrays_per_condition": 480,
+    "official_v4_position_correspondence": false
+  },
+  "inventory": "manifests/rir_file_inventory_v1.json",
+  "caveat": "Official observation and reused FP bank heights differ; see README.md."
+}

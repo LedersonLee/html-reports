@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSSD scene5 — Vision failure and acoustic complementarity</title>
+<style>
+*{box-sizing:border-box}body{font:15px/1.5 system-ui;margin:20px;background:#f4f7fb;color:#172b43}main{max-width:1650px;margin:auto}section{padding:16px;margin:16px 0;background:white;border:1px solid #d6e1ee;border-radius:8px}h1{font-size:25px}h2{font-size:21px}.scroll{overflow:auto}table{width:100%;border-collapse:collapse}td,th{padding:7px 9px;text-align:right;border-bottom:1px solid #dce5ef;white-space:nowrap}td:first-child,th:first-child{text-align:left}select,button{padding:7px;margin:5px;font:inherit;max-width:100%}.controls,.legend{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.controls label{min-width:0}.queryControl{flex:1;min-width:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}img,canvas{width:100%;height:auto}.warning{color:#8e3f18}#identity,#selected,#caseInfo{overflow-wrap:anywhere}a{color:#095bb6}.legend button{background:white;border:1px solid #ccd5df;border-radius:4px}.legend button[aria-pressed=false]{opacity:.5}.symbol{font-size:22px;font-weight:700}.action{background:#f4f7fb;border:1px solid #cad6e2;border-radius:4px;padding:3px 7px;margin:0}.selectedMethod{background:#f1f5fa}.small{font-size:13px;color:#52647d}@media(max-width:800px){body{margin:10px}.grid{grid-template-columns:1fr}.controls{align-items:stretch}.queryControl{flex-basis:100%}h1{font-size:22px}}
+</style>
+<main>
+<h1>HSSD scene5 · 488 test 쿼리 · Vision / Acoustic / Fusion</h1>
+<section>
+<p id="identity">Loading…</p><p>정식 v4 test의 61개 위치 × 8개 yaw, 488장 전체입니다. UnLoc Epoch20과 기존 FP RIR을 사용합니다. Acoustic-only는 공통격자 7,108개 위치 × 36 yaw 전체를 검색하며 visual/GT prior를 사용하지 않습니다.</p><p id="height" class="warning"></p>
+<p class="small">동료 cell 재정렬은 visual Top-K에서 음향 거리 최소 위치를 선택하고 그 후보의 visual yaw를 유지합니다. 아래 분류는 GT를 사용한 사후 진단이며 실제 추론용 실패 감지 게이트가 아닙니다. Test로 K·대역·가중치를 최적화하지 않았습니다.</p>
+<a href="summary.json">전체 성능</a> · <a href="vision_failure_cases.json">사례 분류 JSON</a> · <a href="vision_failure_cases.csv">모든 조건의 사례 CSV</a> · <a href="per_query.csv">원본 개별 추정</a>
+</section>
+<section><h2>동일 488개 쿼리의 전체 성능</h2>
+<div class="controls"><label>Top-K <select id="k"><option>5</option><option>10</option><option>20</option><option selected>50</option></select></label><label>결합 규칙 <select id="policy"><option value="colleague_cell">동료 cell rerank</option><option value="visual_yaw_prior">후보별 visual yaw prior</option></select></label></div><p id="coverage"></p>
+<div class="scroll"><table><thead><tr><th>방법</th><th>R@0.1m%</th><th>R@0.5m%</th><th>R@1m%</th><th>R@1m30°%</th><th>Median XY m</th><th>Median yaw°</th><th>R1 Δ pp [95% CI]</th></tr></thead><tbody id="metrics"></tbody></table></div>
+<p class="small">Acoustic-only yaw는 음향 자체 추정, Fusion yaw는 선택한 후보의 visual yaw입니다. CI는 61개 위치 단위 paired bootstrap(8개 yaw를 묶음)입니다. 모든 성공 기준은 ≤ 경계입니다.</p></section>
+<section><h2>Vision 실패에서 acoustic이 보완하는가?</h2>
+<div class="controls"><label>성공 기준 <select id="criterion"><option value="xy_1m">XY ≤ 1m</option><option value="joint_1m30">XY ≤ 1m · yaw ≤ 30°</option></select></label><label>검토할 acoustic 방법 <select id="method"></select></label></div><p id="conditional" aria-live="polite"></p>
+<div class="scroll"><table><thead><tr><th>Acoustic 방법</th><th>V 실패 중 A-only 성공</th><th>V 실패 → Fusion 복구</th><th>V 성공 → Fusion 훼손</th><th>정답 수 순변화</th><th>전체 recall Δ pp</th></tr></thead><tbody id="conditionalRows"></tbody></table></div>
+<p class="small">Acoustic-only 성공과 Fusion 복구는 다릅니다. 전역 음향 최상위가 틀려도 visual Top-K 안에서는 정답 후보를 고를 수 있습니다. 숫자를 누르면 해당 사례만 아래에 표시합니다.</p></section>
+<section><h2>2DFP 위에서 사례 검토</h2>
+<div class="controls"><label>사례 분류 <select id="case"><option value="all">전체 쿼리</option></select></label><label class="queryControl">Query <select id="query"></select></label><button id="previous" type="button">← 이전</button><button id="next" type="button">다음 →</button></div><p id="caseInfo" aria-live="polite"></p>
+<div class="controls"><label>Likelihood 배경 <select id="layer"><option value="vision">Vision-only</option><option value="acoustic">Acoustic-only</option><option value="fusion">Fusion · Top-K reranking</option></select></label><span class="small">낮음 <span style="display:inline-block;width:160px;height:12px;background:linear-gradient(90deg,#3b4cc0,#67a9cf,#b4a6bd,#f4a582,#b40426)"></span> 높음 · 0.5 흰색 없음</span></div>
+<p id="layerInfo" class="small" aria-live="polite"></p>
+<div class="legend" aria-label="Pose arrow legend">
+<button type="button" data-series="gt" aria-pressed="true"><span class="symbol" style="color:#075ee5">➜</span> GT</button>
+<button type="button" data-series="vision" aria-pressed="true"><span class="symbol" style="color:#07813f">➜</span> Vision</button>
+<button type="button" data-series="acoustic" aria-pressed="true"><span class="symbol" style="color:#c15b00">➜</span> Acoustic</button>
+<button type="button" data-series="fusion" aria-pressed="true"><span class="symbol" style="color:#8626ba">➜</span> Fusion</button>
+</div><p id="selected"></p>
+<div class="grid"><div><h3>Furnished RGB observation</h3><img id="rgb" alt="선택한 test query의 RGB"></div><div><h3 id="mapTitle">2DFP · Vision-only likelihood</h3><canvas id="map" aria-label="Selected likelihood layer and four coloured pose arrows"></canvas></div></div>
+<p class="small">+X 오른쪽, +Z 아래, yaw 0°는 +X입니다. 화살표 시작점은 실제 pose이며 위치를 옮기지 않았습니다. 겹침 구분을 위해 길이만 다르게 표시했으며 길이는 오차·거리·확률을 의미하지 않습니다. 범례를 눌러 개별 화살표를 확인할 수 있습니다. 색은 각 쿼리·방식의 상대 점수를 min–max 정규화한 것으로, 방식 간 보정된 확률 비교가 아닙니다. Fusion은 Top-K 밖의 실내 영역을 회색으로 표시합니다. <a href="likelihood_verification.json">수치·MAP 일치 검증</a></p>
+<div class="scroll"><table><thead><tr><th>Pose</th><th>X m</th><th>Z m</th><th>Yaw°</th><th>XY 오차 m</th><th>Yaw 오차°</th><th>Visual 순위</th></tr></thead><tbody id="choices"></tbody></table></div></section>
+</main>
+<script>
+let data,revision=0,filtered=[],rowIndex=new Map(),geometryPromise;const fieldCache=new Map();
+const $=id=>document.getElementById(id),keys=['recall_at_0.1m','recall_at_0.5m','recall_at_1m','recall_at_1m_30deg'];
+const colours={gt:'#075ee5',vision:'#07813f',acoustic:'#c15b00',fusion:'#8626ba'},lengths={gt:90,vision:74,acoustic:106,fusion:58},visible={gt:true,vision:true,acoustic:true,fusion:true};
+const pct=x=>(100*x).toFixed(2),key=(mode,k,method,q)=>`${mode}|${k}|${method}|${q}`;
+function tr(xs){const r=document.createElement('tr');for(const x of xs){const c=document.createElement('td');if(x instanceof Node)c.append(x);else c.textContent=x;r.append(c)}return r}
+function metric(m){const c=m.paired_delta_vs_visual;return [...keys.map(k=>pct(m[k])),m.median_position_error_m.toFixed(2),m.median_yaw_error_deg.toFixed(1),c?`${(100*c.delta).toFixed(2)} [${c.ci95.map(v=>(100*v).toFixed(2)).join(', ')}]`:'—']}
+function analysis(method=$('method').value){return data.analysis.results[$('criterion').value][$('policy').value][$('k').value][method]}
+function audio(r){return rowIndex.get(key('acoustic_only',0,$('method').value,r.query_index))}
+function fused(r){return rowIndex.get(key($('policy').value,$('k').value,$('method').value,r.query_index))}
+function visionError(r){return Math.hypot(r.visual[0]-r.gt[0],r.visual[1]-r.gt[1])}
+function tables(){
+const s=data.summary,k=$('k').value,policy=$('policy').value,rows=[tr(['Vision-only · common support',...metric(s.vision)]),tr(['Vision-only · unrestricted map',...metric(s.vision_unrestricted)])];
+for(const[m,v]of Object.entries(s.acoustic_only))rows.push(tr(['Acoustic-only · '+data.names[m],...metric(v)]));for(const[m,v]of Object.entries(s.fusion[policy][k]))rows.push(tr(['Vision + '+data.names[m],...metric(v)]));$('metrics').replaceChildren(...rows);
+$('coverage').textContent=`488 queries · 61 poses × 8 yaw · Top-${k} XY 1m coverage ${pct(s.coverage[k])}% · ${s.candidate_cells.toLocaleString()} acoustic candidate cells`;
+const selected=analysis();$('conditional').textContent=`${data.analysis.criteria[$('criterion').value]} 기준: Vision 실패 ${selected.vision_fail}/488, 성공 ${selected.vision_success}/488. 선택한 방법의 Fusion 복구 ${selected.counts.fusion_repair}, 훼손 ${selected.counts.fusion_regression}, 정답 수 순변화 ${selected.net_correct_queries>=0?'+':''}${selected.net_correct_queries}.`;
+function groupButton(method,group,label){const b=document.createElement('button');b.type='button';b.className='action';b.textContent=label;b.onclick=()=>{$('method').value=method;$('case').value=group;refresh()};return b}
+$('conditionalRows').replaceChildren(...Object.entries(data.names).map(([m,n])=>{const a=analysis(m),c=a.counts,r=tr([n,groupButton(m,'acoustic_rescue',`${c.acoustic_rescue} / ${a.vision_fail}`),groupButton(m,'fusion_repair',`${c.fusion_repair} / ${a.vision_fail}`),groupButton(m,'fusion_regression',`${c.fusion_regression} / ${a.vision_success}`),`${a.net_correct_queries>=0?'+':''}${a.net_correct_queries}`,(100*a.net_recall_change).toFixed(2)]);if(m===$('method').value)r.className='selectedMethod';return r}));
+}
+function updateUrl(){const p=new URLSearchParams();for(const id of ['k','policy','method','criterion','case','layer'])p.set(id,$(id).value);if($('query').value)p.set('q',$('query').value);history.replaceState(null,'','?'+p.toString())}
+function loadGeometry(){if(!geometryPromise)geometryPromise=new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{const c=document.createElement('canvas');c.width=im.width;c.height=im.height;const ctx=c.getContext('2d');ctx.drawImage(im,0,0);resolve({width:im.width,height:im.height,pixels:ctx.getImageData(0,0,im.width,im.height).data})};im.onerror=()=>reject(Error('Geometry image load failed'));im.src=data.likelihood.geometry_image});return geometryPromise}
+function loadFields(r){if(!fieldCache.has(r.sample_index)){const pending=fetch(r.likelihood_file).then(async response=>{if(!response.ok)throw Error('Score file: '+response.status);let raw=await response.arrayBuffer();const bytes=new Uint8Array(raw);if(bytes[0]===31&&bytes[1]===139){if(!window.DecompressionStream)throw Error('이 브라우저는 gzip 점수 로딩을 지원하지 않습니다. 최신 Firefox/Chrome을 사용하세요.');raw=await new Response(new Blob([raw]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()}const l=data.likelihood,expected=((l.methods.length+1)*l.candidate_count+l.methods.length*l.top_k_max)*8;if(raw.byteLength!==expected)throw Error('Score file length mismatch');return new Float64Array(raw)});fieldCache.set(r.sample_index,pending);if(fieldCache.size>8)fieldCache.delete(fieldCache.keys().next().value)}return fieldCache.get(r.sample_index)}
+function layerValues(r,raw){const l=data.likelihood,n=l.candidate_count,m=l.methods.indexOf($('method').value),layer=$('layer').value,values=new Float64Array(n);values.fill(NaN);
+if(layer==='vision')values.set(raw.subarray(0,n));
+else if(layer==='acoustic'){for(let i=0;i<n;i++)values[i]=-raw[(m+1)*n+i]}
+else{const k=Number($('k').value);for(let rank=0;rank<k;rank++){const i=r.likelihood_proposal_indices[rank];const distance=$('policy').value==='colleague_cell'?raw[(m+1)*n+i]:raw[(l.methods.length+1)*n+m*l.top_k_max+rank];values[i]=-distance}}
+return values}
+function paintLikelihood(geometry,r,raw){const l=data.likelihood,values=layerValues(r,raw),valid=Array.from(values).filter(Number.isFinite),lo=Math.min(...valid),hi=Math.max(...valid),pixels=new Uint8ClampedArray(geometry.pixels),b=data.map_metadata.world_bounds_m,s=data.map_metadata.map_spacing_m,size=Math.round(l.candidate_spacing_m/s),half=Math.floor(size/2),palette=l.palette.map(h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)));
+for(let p=0;p<pixels.length;p+=4)if(pixels[p]>127){pixels[p]=232;pixels[p+1]=236;pixels[p+2]=241}
+for(let i=0;i<values.length;i++){if(!Number.isFinite(values[i]))continue;const relative=hi>lo?(values[i]-lo)/(hi-lo):.5,t=Math.max(0,Math.min(4,relative*4)),a=Math.min(3,Math.floor(t)),f=t-a,colour=palette[a].map((v,c)=>Math.round(.824*(v+(palette[a+1][c]-v)*f)+.176*255)),point=l.candidates_xz_m[i],cx=Math.round((point[0]-b.x_min)/s),cy=Math.round((point[1]-b.z_min)/s);for(let y=Math.max(0,cy-half);y<Math.min(geometry.height,cy-half+size);y++)for(let x=Math.max(0,cx-half);x<Math.min(geometry.width,cx-half+size);x++){const p=4*(y*geometry.width+x);if(geometry.pixels[p]>127){pixels[p]=colour[0];pixels[p+1]=colour[1];pixels[p+2]=colour[2]}}}
+const cv=document.createElement('canvas');cv.width=geometry.width;cv.height=geometry.height;cv.getContext('2d').putImageData(new ImageData(pixels,geometry.width,geometry.height),0,0);return {canvas:cv,count:valid.length,lo,hi}}
+function refresh(preferred=$('query').value){
+tables();const a=analysis(),group=$('case').value,indices=group==='all'?data.records.map(r=>r.query_index):a.groups[group];filtered=indices.map(i=>data.records[i]);
+if(group!=='all')filtered.sort((x,y)=>(visionError(y)-fused(y).error_m)-(visionError(x)-fused(x).error_m)||x.sample_index-y.sample_index);
+$('query').replaceChildren(...filtered.map(r=>new Option(`Q${String(r.sample_index).padStart(5,'0')} · P${r.pose_id+1} · yaw ${r.yaw_deg}° · V ${visionError(r).toFixed(2)} → F ${fused(r).error_m.toFixed(2)}m`,r.sample_index)));
+if(filtered.some(r=>String(r.sample_index)===String(preferred)))$('query').value=preferred;
+$('caseInfo').textContent=`${group==='all'?'전체 쿼리':data.analysis.group_names[group]}: ${filtered.length} query / ${new Set(filtered.map(r=>r.pose_id)).size} pose. ${group==='all'?'원본 query 순서':'XY 오차 감소량 순서'}.`;
+for(const option of $('case').options)option.textContent=option.value==='all'?'전체 쿼리 (488)':`${data.analysis.group_names[option.value]} (${a.counts[option.value]})`;draw();
+}
+function arrow(c,x,y,yaw,colour,length){
+const a=yaw*Math.PI/180,dx=Math.cos(a),dy=Math.sin(a),ex=x+length*dx,ey=y+length*dy,head=17,half=10,nx=ex-head*dx,ny=ey-head*dy;
+c.lineCap='butt';c.lineJoin='round';c.beginPath();c.moveTo(x,y);c.lineTo(nx+3*dx,ny+3*dy);c.strokeStyle='white';c.lineWidth=12;c.stroke();c.strokeStyle=colour;c.lineWidth=7;c.stroke();
+c.beginPath();c.moveTo(ex,ey);c.lineTo(nx-half*dy,ny+half*dx);c.lineTo(nx+half*dy,ny-half*dx);c.closePath();c.strokeStyle='white';c.lineWidth=5;c.stroke();c.fillStyle=colour;c.fill();
+}
+async function draw(){
+const rev=++revision;
+const r=filtered.find(r=>String(r.sample_index)===$('query').value),pos=filtered.indexOf(r);$('previous').disabled=pos<=0;$('next').disabled=pos<0||pos===filtered.length-1;
+if(!r){$('selected').textContent='이 조건에 해당하는 사례가 없습니다.';$('rgb').removeAttribute('src');$('choices').replaceChildren();const c=$('map').getContext('2d');c.clearRect(0,0,$('map').width,$('map').height);updateUrl();return}
+const ar=audio(r),fu=fused(r),ve=visionError(r),vy=Math.abs((r.visual[2]-r.gt[2]+540)%360-180);$('rgb').src=r.rgb;$('selected').textContent=`Q${String(r.sample_index).padStart(5,'0')} · GT (${r.gt.map(x=>x.toFixed(2)).join(', ')}) · Vision ${ve.toFixed(2)}m · Acoustic ${ar.error_m.toFixed(2)}m · Fusion ${fu.error_m.toFixed(2)}m`;
+function name(text,type){const span=document.createElement('span');span.textContent='➜ '+text;span.style.color=colours[type];return span}
+$('choices').replaceChildren(tr([name('GT','gt'),...r.gt.map(x=>x.toFixed(2)),'0.00','0.0','—']),tr([name('Vision','vision'),...r.visual.map(x=>x.toFixed(2)),ve.toFixed(2),vy.toFixed(1),'1']),...[[ar,'Acoustic','acoustic'],[fu,'Fusion','fusion']].map(([v,n,t])=>tr([name(n,t),v.x_m.toFixed(2),v.z_m.toFixed(2),v.world_yaw_deg,v.error_m.toFixed(2),v.yaw_error_deg.toFixed(1),v.visual_rank||'—'])));
+updateUrl();$('layerInfo').textContent='Likelihood 점수 로딩 중…';
+try{const [geometry,raw]=await Promise.all([loadGeometry(),loadFields(r)]);if(rev!==revision)return;const heat=paintLikelihood(geometry,r,raw),cv=$('map'),pad=110;cv.width=geometry.width+2*pad;cv.height=geometry.height+2*pad;const c=cv.getContext('2d');c.fillStyle='white';c.fillRect(0,0,cv.width,cv.height);c.drawImage(heat.canvas,pad,pad);const b=data.map_metadata.world_bounds_m,s=data.map_metadata.map_spacing_m,poses={gt:r.gt,vision:r.visual,acoustic:[ar.x_m,ar.z_m,ar.world_yaw_deg],fusion:[fu.x_m,fu.z_m,fu.world_yaw_deg]};for(const type of ['acoustic','gt','vision','fusion'])if(visible[type]){const p=poses[type];arrow(c,pad+(p[0]-b.x_min)/s,pad+(p[1]-b.z_min)/s,p[2],colours[type],lengths[type])}cv.dataset.query=String(r.sample_index);cv.dataset.arrowCount=String(Object.values(visible).filter(Boolean).length);cv.dataset.layer=$('layer').value;cv.dataset.finiteCells=String(heat.count);
+const layer=$('layer').value,label=layer==='vision'?'Vision-only':layer==='acoustic'?'Acoustic-only · '+data.names[$('method').value]:'Fusion · '+data.names[$('method').value];$('mapTitle').textContent='2DFP · '+label;
+const definition=layer==='vision'?'각 XY에서 yaw 최대 visual log score':layer==='acoustic'?'각 XY에서 36 yaw 중 최소 음향 거리의 음수':`Visual Top-${$('k').value} 안에서 ${$('policy').value==='colleague_cell'?'yaw 최소 거리':'후보별 visual yaw 거리'}의 음수. 나머지 실내는 회색`;
+$('layerInfo').textContent=`${definition} · ${heat.count.toLocaleString()} cells · 원점수 ${heat.lo.toPrecision(4)} ~ ${heat.hi.toPrecision(4)} → 색상 0 ~ 1. 확률 결합이 아닌 실제 평가의 상대 점수입니다.`;
+}catch(error){if(rev!==revision)return;$('layerInfo').textContent='Likelihood 로딩 오류: '+error.message;const cv=$('map');cv.getContext('2d').clearRect(0,0,cv.width,cv.height);console.error(error)}
+}
+fetch('review.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>{
+data=d;for(const r of d.rows)rowIndex.set(key(r.mode,r.k,r.method,r.query_index),r);const s=d.summary;$('identity').textContent=`Official test488 · UnLoc completed epoch20 · SHA256 ${s.checkpoint_sha256}`;const h=s.candidate_height_limit;$('height').textContent=`높이 차이 한계: 관측 RGB/RIR Y=${h.observation_y_m.join(', ')}m, FP RIR Y=${h.reused_candidate_y_min_m.toFixed(2)}~${h.reused_candidate_y_max_m.toFixed(2)}m. 높이까지 일치시킨 평가가 아닙니다.`;
+$('method').replaceChildren(...Object.entries(d.names).map(([m,n])=>new Option(n,m)));$('case').append(...Object.entries(d.analysis.group_names).map(([g,n])=>new Option(n,g)));
+const params=new URLSearchParams(location.search);for(const id of ['k','policy','method','criterion','case','layer'])if(params.has(id)&&[...$(id).options].some(o=>o.value===params.get(id)))$(id).value=params.get(id);
+for(const id of ['k','policy','method','criterion','case'])$(id).onchange=()=>refresh();$('layer').onchange=draw;$('query').onchange=draw;$('previous').onclick=()=>{$('query').selectedIndex--;draw()};$('next').onclick=()=>{$('query').selectedIndex++;draw()};for(const b of document.querySelectorAll('[data-series]'))b.onclick=()=>{const t=b.dataset.series;visible[t]=!visible[t];b.setAttribute('aria-pressed',String(visible[t]));draw()};refresh(params.get('q'));
+}).catch(e=>{$('identity').textContent='Error: '+e;console.error(e)});
+</script></html>

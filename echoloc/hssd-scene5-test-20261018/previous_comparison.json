@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "previous": "/ssd1/AV-FPLoc/exp4_acoustic_xy_observability/analysis/hssd_scene5_v4_epoch020_acoustic_20261018",
+  "comparisons": {
+    "visual.npz": {
+      "exact_values": true,
+      "max_absolute_difference": 0.0
+    },
+    "observation_features.npz": {
+      "exact_values": true,
+      "max_absolute_difference": 0.0
+    },
+    "acoustic_global_minima.npz": {
+      "exact_values": true,
+      "max_absolute_difference": 0.0
+    },
+    "acoustic_topk_distances.npz": {
+      "exact_values": true,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "all_selected_poses_identical": true,
+  "all_metrics_identical": true,
+  "source": "canonical copied RIR; raw features freshly extracted",
+  "height_mismatch_unchanged": true
+}

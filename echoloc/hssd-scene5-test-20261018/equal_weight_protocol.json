@@ -1,0 +1,24 @@
+{
+  "scene_id": "104862687_172226883",
+  "query_count": 488,
+  "candidate_cells": 7108,
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "formula": "F(x,z)=0.5*minmax(max_yaw visual_log_score)+0.5*minmax(-min_yaw acoustic_distance)",
+  "normalization": "Independent per-query min-max over the SAME full common XY grid; constant fields map to 0.5",
+  "yaw": "Visual maximum-score yaw at the fused XY winner; not an independently fused joint-yaw posterior",
+  "tie_break": "First cell in immutable common-candidate order",
+  "topk_restriction": false,
+  "ground_truth_used_for_weights": false,
+  "note": "Arithmetic normalized-score baseline, not calibrated posterior or product of log likelihoods",
+  "checkpoint_sha256": "b9626c0f8b5411f365d6151e7a760b8e79fffe5e6ee2abced6caaa7705a1c36f",
+  "source_hashes": {
+    "visual.npz": "22529911211d5790d4db8f9cf1f6feaec8ca3876febf6414157b192dd773b5a9",
+    "acoustic_global_minima.npz": "61ff71198f49e9c30f929b684ee9fbc863928898dc94ea6021c6300250662b7d",
+    "per_query.csv": "0329e7bb9847e01c529bec5441a836c704dc67e5d62432d54c0006bf3628c7da"
+  },
+  "candidate_manifest_sha256": "efc331ae5a80d88f4471a32cab4cb80d9c83eef0a77d704984fedd933bcefbe2",
+  "elapsed_seconds": 2.616147603999707
+}

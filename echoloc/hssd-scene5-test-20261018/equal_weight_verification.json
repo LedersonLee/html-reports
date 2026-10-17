@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "condition_criterion_pairs": 108,
+  "normalized_field_argmax_checks": 2928,
+  "original_predictions_changed": false,
+  "added_baseline": "equal_weight_xy",
+  "source_hashes": {
+    "visual.npz": "22529911211d5790d4db8f9cf1f6feaec8ca3876febf6414157b192dd773b5a9",
+    "acoustic_global_minima.npz": "61ff71198f49e9c30f929b684ee9fbc863928898dc94ea6021c6300250662b7d",
+    "per_query.csv": "0329e7bb9847e01c529bec5441a836c704dc67e5d62432d54c0006bf3628c7da"
+  }
+}

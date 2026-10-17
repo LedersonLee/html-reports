@@ -1036,5 +1036,139 @@
     "observations": "/ssd1/AV-FPLoc/datasets/HSSD/RIR/Observed/test/104862687_172226883",
     "candidate_manifest": "/ssd1/AV-FPLoc/datasets/HSSD/RIR/FP/104862687_172226883/candidate_records.json",
     "freshly_extracted_features": "/ssd1/AV-FPLoc/exp4_acoustic_xy_observability/analysis/hssd_scene5_test_rerun_20261018/candidate_features"
+  },
+  "equal_weight_fusion": {
+    "legacy_stft_l1": {
+      "recall_at_0.1m": 0.0860655737704918,
+      "recall_at_0.5m": 0.35655737704918034,
+      "recall_at_1m": 0.430327868852459,
+      "recall_at_1m_30deg": 0.41598360655737704,
+      "median_position_error_m": 2.024051476121986,
+      "median_yaw_error_deg": 22.5,
+      "paired_delta_vs_visual": {
+        "delta": -0.21721311475409835,
+        "ci95": [
+          -0.2930327868852459,
+          -0.13934426229508196
+        ]
+      },
+      "repairs1m": 32,
+      "regressions1m": 138,
+      "delta_vs_visual": -0.21721311475409844
+    },
+    "coherence375_3000": {
+      "recall_at_0.1m": 0.05122950819672131,
+      "recall_at_0.5m": 0.36475409836065575,
+      "recall_at_1m": 0.49385245901639346,
+      "recall_at_1m_30deg": 0.4672131147540984,
+      "median_position_error_m": 1.2114767121480636,
+      "median_yaw_error_deg": 10.0,
+      "paired_delta_vs_visual": {
+        "delta": -0.15368852459016394,
+        "ci95": [
+          -0.2192622950819672,
+          -0.09016393442622951
+        ]
+      },
+      "repairs1m": 33,
+      "regressions1m": 108,
+      "delta_vs_visual": -0.15368852459016397
+    },
+    "coherence500_1500": {
+      "recall_at_0.1m": 0.036885245901639344,
+      "recall_at_0.5m": 0.3360655737704918,
+      "recall_at_1m": 0.42418032786885246,
+      "recall_at_1m_30deg": 0.4098360655737705,
+      "median_position_error_m": 2.2891333892113,
+      "median_yaw_error_deg": 15.0,
+      "paired_delta_vs_visual": {
+        "delta": -0.22336065573770492,
+        "ci95": [
+          -0.2848360655737705,
+          -0.16393442622950818
+        ]
+      },
+      "repairs1m": 18,
+      "regressions1m": 127,
+      "delta_vs_visual": -0.22336065573770497
+    },
+    "coherence500_4000": {
+      "recall_at_0.1m": 0.04918032786885246,
+      "recall_at_0.5m": 0.35655737704918034,
+      "recall_at_1m": 0.48975409836065575,
+      "recall_at_1m_30deg": 0.4569672131147541,
+      "median_position_error_m": 1.1969915759800176,
+      "median_yaw_error_deg": 12.5,
+      "paired_delta_vs_visual": {
+        "delta": -0.15778688524590165,
+        "ci95": [
+          -0.22336065573770492,
+          -0.0942622950819672
+        ]
+      },
+      "repairs1m": 32,
+      "regressions1m": 109,
+      "delta_vs_visual": -0.15778688524590168
+    },
+    "energy_coherence500_1500": {
+      "recall_at_0.1m": 0.1413934426229508,
+      "recall_at_0.5m": 0.4139344262295082,
+      "recall_at_1m": 0.47540983606557374,
+      "recall_at_1m_30deg": 0.4651639344262295,
+      "median_position_error_m": 1.2659375293649646,
+      "median_yaw_error_deg": 10.0,
+      "paired_delta_vs_visual": {
+        "delta": -0.1721311475409836,
+        "ci95": [
+          -0.2459016393442623,
+          -0.09631147540983606
+        ]
+      },
+      "repairs1m": 35,
+      "regressions1m": 119,
+      "delta_vs_visual": -0.1721311475409837
+    },
+    "energy_coherence500_4000": {
+      "recall_at_0.1m": 0.10655737704918032,
+      "recall_at_0.5m": 0.36885245901639346,
+      "recall_at_1m": 0.4180327868852459,
+      "recall_at_1m_30deg": 0.4057377049180328,
+      "median_position_error_m": 2.4453591889274016,
+      "median_yaw_error_deg": 25.0,
+      "paired_delta_vs_visual": {
+        "delta": -0.22950819672131148,
+        "ci95": [
+          -0.305327868852459,
+          -0.15368852459016394
+        ]
+      },
+      "repairs1m": 24,
+      "regressions1m": 136,
+      "delta_vs_visual": -0.2295081967213115
+    }
+  },
+  "equal_weight_protocol": {
+    "scene_id": "104862687_172226883",
+    "query_count": 488,
+    "candidate_cells": 7108,
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "formula": "F(x,z)=0.5*minmax(max_yaw visual_log_score)+0.5*minmax(-min_yaw acoustic_distance)",
+    "normalization": "Independent per-query min-max over the SAME full common XY grid; constant fields map to 0.5",
+    "yaw": "Visual maximum-score yaw at the fused XY winner; not an independently fused joint-yaw posterior",
+    "tie_break": "First cell in immutable common-candidate order",
+    "topk_restriction": false,
+    "ground_truth_used_for_weights": false,
+    "note": "Arithmetic normalized-score baseline, not calibrated posterior or product of log likelihoods",
+    "checkpoint_sha256": "b9626c0f8b5411f365d6151e7a760b8e79fffe5e6ee2abced6caaa7705a1c36f",
+    "source_hashes": {
+      "visual.npz": "22529911211d5790d4db8f9cf1f6feaec8ca3876febf6414157b192dd773b5a9",
+      "acoustic_global_minima.npz": "61ff71198f49e9c30f929b684ee9fbc863928898dc94ea6021c6300250662b7d",
+      "per_query.csv": "0329e7bb9847e01c529bec5441a836c704dc67e5d62432d54c0006bf3628c7da"
+    },
+    "candidate_manifest_sha256": "efc331ae5a80d88f4471a32cab4cb80d9c83eef0a77d704984fedd933bcefbe2",
+    "elapsed_seconds": 2.616147603999707
   }
 }

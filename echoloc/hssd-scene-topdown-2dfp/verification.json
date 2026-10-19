@@ -1,0 +1,22 @@
+{
+  "status": "verified",
+  "scenes": 152,
+  "counts": {
+    "train": 116,
+    "val": 19,
+    "test": 17
+  },
+  "map_copies_byte_identical": true,
+  "all_images_verified": true,
+  "max_projection_alignment_error_px": 0.0003019401676738198,
+  "renderer_source_sha256": "8138a8b5ee3351420be3c93059673fc148f99d248af51643b369a906c99da087",
+  "known_asset_exclusions": [
+    {
+      "scene_id": "108736611_177263226",
+      "templates": [
+        "xxxx21d2f3c8xedd4x4619x90b0x62bad36c41cb",
+        "xxxx21d2f3c8xedd4x4619x90b0x62bad36c41cb"
+      ]
+    }
+  ]
+}

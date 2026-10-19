@@ -4,6 +4,7 @@ Public, static HTML reports for research experiment review.
 
 ## EchoLoc
 
+- [HSSD — Furnished / furniture-free top-down views and training 2DFP (152 scenes)](echoloc/hssd-scene-topdown-2dfp/)
 - [HSSD scene5 — Vision / Acoustic / Fusion likelihood comparison](echoloc/hssd-scene5-test-20261018/)
 - [Experiment 1 — Visual Ambiguity Audit](echoloc/exp1-visual-ambiguity-audit/)
 

@@ -1,0 +1,3 @@
+# Local rendering intermediates are not public report assets.
+/logs/
+/work/

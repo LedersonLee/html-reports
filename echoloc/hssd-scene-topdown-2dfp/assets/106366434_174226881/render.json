@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "scene_id": "106366434_174226881",
+  "split": "train",
+  "resolution_px": 1200,
+  "renderer_source_sha256": "8138a8b5ee3351420be3c93059673fc148f99d248af51643b369a906c99da087",
+  "source_scene_sha256": "d3330882961c8573998eaf690036e8ee45c3ea9e2f4bd027cc2f391622444b3e",
+  "source_stage_sha256": "7b73d79875f1149434dc17635b2cb8752582317119558cc70f3fe0af47eb096c",
+  "map_sha256": "1a6286b051ad02ad4807088760566430b0db194c294ba37fa9187339daaba44f",
+  "map_metadata_sha256": "d89b633de2fad113a4de77cd37b898783b4b7684099439b5d33b25ac854af3d4",
+  "images_sha256": {
+    "furnished.png": "41681bf86f61e35984ed650cbc069f875987cc165595400dd21142fbc42a3458",
+    "object_free.png": "95f0f60e183d81e357649ccc55d3c795ec93c77ceed3d3e9699a087f4cb8a7ba",
+    "map_native.png": "1a6286b051ad02ad4807088760566430b0db194c294ba37fa9187339daaba44f",
+    "map_aligned.png": "ef8beb560bb3dbfc0376f238b634d250fd89e4fd6ef010601b9642127b2ff4cb"
+  },
+  "frame": {
+    "x_min": -18.463900000000002,
+    "x_max": 0.7539000000000016,
+    "z_min": -16.2539,
+    "z_max": 2.9639000000000015,
+    "span_m": 19.217800000000004
+  },
+  "world_axes": "+Y top-down; +X right, +Z down; orthographic, no reflection",
+  "projection_alignment_error_px": 0.00010156631469726562,
+  "projection_matrix": [
+    [
+      0.10407018661499023,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.10407018661499023,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.261159747838974,
+      -2.3057987689971924
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_matrix": [
+    [
+      1.0,
+      -0.0,
+      0.0,
+      8.854998588562012
+    ],
+    [
+      -0.0,
+      5.960465188081798e-08,
+      -1.0000001192092896,
+      -6.64500093460083
+    ],
+    [
+      0.0,
+      1.0000001192092896,
+      5.960465188081798e-08,
+      -7.650000095367432
+    ],
+    [
+      -0.0,
+      0.0,
+      -0.0,
+      1.0
+    ]
+  ],
+  "floor_y_m": 0.0,
+  "clip_y_m": 2.65,
+  "object_count": 320,
+  "excluded_crashing_templates": [],
+  "object_free_definition": "Original native stage only; all object_instances removed, including object-based doors/windows; NOT the extruded FP RIR mesh",
+  "roof_removal": "Near-plane horizontal clipping; upper walls/objects above clip_y_m are also removed",
+  "furnished_coverage": 0.5301229166666667,
+  "object_free_coverage": 0.5297652777777778,
+  "renderer": "Habitat-Sim KTX2-enabled GPU orthographic",
+  "updated_unix": 1792400564.4095583
+}

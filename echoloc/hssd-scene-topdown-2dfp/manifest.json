@@ -1,0 +1,619 @@
+{
+  "split_sha256": "af1f5ded1e3cc8286b7f6fc4155f39761b0afc12c04c33313ea43f40705f2dc8",
+  "scenes": [
+    {
+      "scene_id": "102344022",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344049",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344094",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344193",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344250",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344403",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344469",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344529",
+      "split": "train"
+    },
+    {
+      "scene_id": "102815835",
+      "split": "train"
+    },
+    {
+      "scene_id": "102815859",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816036",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816051",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816615",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816627",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816729",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816756",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816786",
+      "split": "train"
+    },
+    {
+      "scene_id": "102816852",
+      "split": "train"
+    },
+    {
+      "scene_id": "102817053",
+      "split": "train"
+    },
+    {
+      "scene_id": "102817140",
+      "split": "train"
+    },
+    {
+      "scene_id": "102817200",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997424_171030444",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997445_171030492",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997460_171030507",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997478_171030525",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997541_171030615",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997562_171030642",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997586_171030669",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997613_171030702",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997643_171030747",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997718_171030855",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997781_171030978",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997799_171031002",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997895_171031182",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997919_171031233",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997940_171031257",
+      "split": "train"
+    },
+    {
+      "scene_id": "103997970_171031287",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348010_171512832",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348028_171512877",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348037_171512898",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348133_171513054",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348160_171513093",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348202_171513150",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348253_171513237",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348328_171513363",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348361_171513414",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348394_171513453",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348463_171513588",
+      "split": "train"
+    },
+    {
+      "scene_id": "104348511_171513654",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862396_172226349",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862501_172226556",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862513_172226580",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862534_172226625",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862558_172226664",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862621_172226772",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862639_172226823",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862660_172226844",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862669_172226853",
+      "split": "train"
+    },
+    {
+      "scene_id": "104862681_172226874",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515160_173104077",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515211_173104179",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515211_173104185",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515235_173104215",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515307_173104317",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515337_173104347",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515430_173104494",
+      "split": "train"
+    },
+    {
+      "scene_id": "105515490_173104566",
+      "split": "train"
+    },
+    {
+      "scene_id": "106365897_174225972",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366104_174226329",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366104_174226332",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366248_174226527",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366263_174226557",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366302_174226617",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366323_174226647",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366353_174226695",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366371_174226743",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366386_174226770",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366410_174226806",
+      "split": "train"
+    },
+    {
+      "scene_id": "106366434_174226881",
+      "split": "train"
+    },
+    {
+      "scene_id": "106878858_174886965",
+      "split": "train"
+    },
+    {
+      "scene_id": "106878867_174886977",
+      "split": "train"
+    },
+    {
+      "scene_id": "106878915_174887025",
+      "split": "train"
+    },
+    {
+      "scene_id": "106878945_174887058",
+      "split": "train"
+    },
+    {
+      "scene_id": "106878960_174887073",
+      "split": "train"
+    },
+    {
+      "scene_id": "106879044_174887172",
+      "split": "train"
+    },
+    {
+      "scene_id": "106879080_174887211",
+      "split": "train"
+    },
+    {
+      "scene_id": "107733912_175999623",
+      "split": "train"
+    },
+    {
+      "scene_id": "107733960_175999701",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734056_175999839",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734080_175999881",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734110_175999914",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734119_175999935",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734119_175999938",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734188_176000034",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734227_176000091",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734254_176000121",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734287_176000160",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734338_176000244",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734449_176000403",
+      "split": "train"
+    },
+    {
+      "scene_id": "107734479_176000442",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294417_176709879",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294465_176709960",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294537_176710050",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294558_176710095",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294573_176710113",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294684_176710278",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294816_176710461",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294846_176710506",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294870_176710551",
+      "split": "train"
+    },
+    {
+      "scene_id": "108294897_176710602",
+      "split": "train"
+    },
+    {
+      "scene_id": "108736689_177263340",
+      "split": "train"
+    },
+    {
+      "scene_id": "108736722_177263382",
+      "split": "train"
+    },
+    {
+      "scene_id": "108736779_177263484",
+      "split": "train"
+    },
+    {
+      "scene_id": "108736824_177263559",
+      "split": "train"
+    },
+    {
+      "scene_id": "108736851_177263586",
+      "split": "train"
+    },
+    {
+      "scene_id": "108736872_177263607",
+      "split": "train"
+    },
+    {
+      "scene_id": "102344115",
+      "split": "val"
+    },
+    {
+      "scene_id": "102344307",
+      "split": "val"
+    },
+    {
+      "scene_id": "102344457",
+      "split": "val"
+    },
+    {
+      "scene_id": "103997478_171030528",
+      "split": "val"
+    },
+    {
+      "scene_id": "104348082_171512994",
+      "split": "val"
+    },
+    {
+      "scene_id": "104862573_172226682",
+      "split": "val"
+    },
+    {
+      "scene_id": "105515286_173104287",
+      "split": "val"
+    },
+    {
+      "scene_id": "105515448_173104512",
+      "split": "val"
+    },
+    {
+      "scene_id": "106366134_174226362",
+      "split": "val"
+    },
+    {
+      "scene_id": "106366173_174226431",
+      "split": "val"
+    },
+    {
+      "scene_id": "106879005_174887124",
+      "split": "val"
+    },
+    {
+      "scene_id": "108294624_176710203",
+      "split": "val"
+    },
+    {
+      "scene_id": "108294765_176710386",
+      "split": "val"
+    },
+    {
+      "scene_id": "108294783_176710410",
+      "split": "val"
+    },
+    {
+      "scene_id": "108294798_176710428",
+      "split": "val"
+    },
+    {
+      "scene_id": "108736611_177263226",
+      "split": "val"
+    },
+    {
+      "scene_id": "108736635_177263256",
+      "split": "val"
+    },
+    {
+      "scene_id": "108736737_177263406",
+      "split": "val"
+    },
+    {
+      "scene_id": "108736800_177263517",
+      "split": "val"
+    },
+    {
+      "scene_id": "102344280",
+      "split": "test"
+    },
+    {
+      "scene_id": "102816066",
+      "split": "test"
+    },
+    {
+      "scene_id": "102816114",
+      "split": "test"
+    },
+    {
+      "scene_id": "102816216",
+      "split": "test"
+    },
+    {
+      "scene_id": "103997586_171030666",
+      "split": "test"
+    },
+    {
+      "scene_id": "103997994_171031320",
+      "split": "test"
+    },
+    {
+      "scene_id": "104862417_172226382",
+      "split": "test"
+    },
+    {
+      "scene_id": "104862687_172226883",
+      "split": "test"
+    },
+    {
+      "scene_id": "105515151_173104068",
+      "split": "test"
+    },
+    {
+      "scene_id": "105515184_173104128",
+      "split": "test"
+    },
+    {
+      "scene_id": "105515301_173104305",
+      "split": "test"
+    },
+    {
+      "scene_id": "105515403_173104449",
+      "split": "test"
+    },
+    {
+      "scene_id": "107734017_175999794",
+      "split": "test"
+    },
+    {
+      "scene_id": "107734119_175999932",
+      "split": "test"
+    },
+    {
+      "scene_id": "107734176_176000019",
+      "split": "test"
+    },
+    {
+      "scene_id": "108736656_177263304",
+      "split": "test"
+    },
+    {
+      "scene_id": "108736884_177263634",
+      "split": "test"
+    }
+  ],
+  "counts": {
+    "test": 17,
+    "train": 116,
+    "val": 19
+  },
+  "scope": "Current original116/19/17 split; training map bytes unchanged"
+}

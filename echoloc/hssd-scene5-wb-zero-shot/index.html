@@ -1,26 +1,42 @@
 <!doctype html>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HSSD scene5 · W_B zero-shot</title>
+<title>HSSD scene5 · STFT-L1 clutter evaluation</title>
 <style>
-  :root{color-scheme:light dark}body{margin:0;background:#f4f7fb;color:#142033;font:15px/1.5 system-ui,sans-serif}.wrap{max-width:1050px;margin:auto;padding:30px 20px}h1{margin:0 0 8px;font-size:26px}h2{margin:0 0 8px;font-size:18px}.sub{color:#53627a;margin:0 0 24px}.note{background:#fff;border-left:4px solid #0b5fff;padding:13px 16px;margin:0 0 24px;box-shadow:0 1px 4px #182b4d12}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:#fff;border:1px solid #d9e1ed;border-radius:11px;padding:17px;box-shadow:0 2px 8px #182b4d12}.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}a{color:#fff;background:#0b5fff;text-decoration:none;padding:8px 11px;border-radius:7px;font-weight:650}a:hover{background:#084bc0}table{border-collapse:collapse;width:100%;margin-top:24px;background:#fff;font-size:13px}th,td{padding:8px;border-bottom:1px solid #e7ecf3;text-align:right}th:first-child,td:first-child{text-align:left}.small{color:#53627a;font-size:13px}@media(max-width:640px){.grid{grid-template-columns:1fr}.wrap{padding:18px 12px}}
-</style>
+  body{margin:0;background:#f4f7fb;color:#142033;font:15px/1.5 system-ui,sans-serif}.wrap{max-width:1050px;margin:auto;padding:30px 20px}h1{margin:0 0 8px;font-size:26px}h2{margin:28px 0 8px;font-size:20px}.sub,.small{color:#53627a}.note{background:#fff;border-left:4px solid #0b5fff;padding:13px 16px;margin:20px 0;box-shadow:0 1px 4px #182b4d12}a{color:#0756cb}table{border-collapse:collapse;width:100%;background:#fff;font-size:14px}th,td{padding:10px;border-bottom:1px solid #e7ecf3;text-align:right}th:first-child{text-align:left}thead{background:#e9eff8}.table-wrap{overflow-x:auto}summary{cursor:pointer;font-weight:650}details{margin-top:30px;padding:16px;background:white}li{margin:6px 0}.small{font-size:13px}@media(max-width:640px){.wrap{padding:18px 12px}th,td{padding:8px;font-size:12px}}
+</style></head><body>
 <main class="wrap">
-  <h1>HSSD scene5 · frozen W<sub>B</sub> zero-shot likelihood</h1>
-  <p class="sub">Pooled Replica+MP3D projection, 1746 → 128, then L1. Object overlays are off by default in each viewer.</p>
-  <p class="note">Each page has 80 queries, 36 yaw settings, likelihood colorbar, and separate GT (solid blue) / prediction (dashed green) markers. At 0%, both displayed conditions are the same independently rendered structural-stage control; 25–100% compare a furnished observation with the object-free floorplan. The retained-object overlay exactly matches the selected clutter condition.</p>
-  <section class="grid">
-    <article class="card"><h2>0% retained · 0 objects</h2><p class="small">Independent structural-stage control; both input labels intentionally resolve to the same control.</p><div class="links"><a href="objects-0/exp4/">Experiment 4 · X,Z</a><a href="objects-0/exp5/">Experiment 5 · yaw</a></div></article>
-    <article class="card"><h2>100% retained · 196 objects</h2><p class="small">Original furnished scene.</p><div class="links"><a href="objects-100/exp4/">Experiment 4 · X,Z</a><a href="objects-100/exp5/">Experiment 5 · yaw</a></div></article>
-    <article class="card"><h2>75% retained · 147 objects</h2><p class="small">Stable derived subset.</p><div class="links"><a href="objects-75/exp4/">Experiment 4 · X,Z</a><a href="objects-75/exp5/">Experiment 5 · yaw</a></div></article>
-    <article class="card"><h2>50% retained · 98 objects</h2><p class="small">Stable derived subset.</p><div class="links"><a href="objects-50/exp4/">Experiment 4 · X,Z</a><a href="objects-50/exp5/">Experiment 5 · yaw</a></div></article>
-    <article class="card"><h2>25% retained · 49 objects</h2><p class="small">Stable derived subset.</p><div class="links"><a href="objects-25/exp4/">Experiment 4 · X,Z</a><a href="objects-25/exp5/">Experiment 5 · yaw</a></div></article>
-  </section>
-  <table><thead><tr><th>Retained objects</th><th>Exp4 L1 R@1</th><th>Exp4 W<sub>B</sub> R@1</th><th>Exp5 L1 exact yaw</th><th>Exp5 W<sub>B</sub> exact yaw</th></tr></thead><tbody>
-    <tr><td>0% (stage control)</td><td>99.583%</td><td>88.646%</td><td>31.458%</td><td>20.174%</td></tr>
-    <tr><td>100%</td><td>1.042%</td><td>0.625%</td><td>5.833%</td><td>4.097%</td></tr>
-    <tr><td>75%</td><td>1.042%</td><td>0.590%</td><td>6.250%</td><td>4.861%</td></tr>
-    <tr><td>50%</td><td>9.375%</td><td>4.375%</td><td>5.833%</td><td>5.278%</td></tr>
-    <tr><td>25%</td><td>23.958%</td><td>7.639%</td><td>12.917%</td><td>7.292%</td></tr>
-  </tbody></table>
-</main>
+  <h1>HSSD scene5 · STFT-L1 clutter evaluation</h1>
+  <p class="sub">Identity STFT-band L1 · 80 query positions × 36 headings = 2,880 observations per condition.</p>
+  <div class="note">Position and direction are <strong>separate GT-conditioned experiments</strong>, not joint pose localization. Experiment 4 fixes GT yaw and searches X,Z; Experiment 5 fixes GT X,Z and searches yaw. No combined 1m/30° recall is inferred from these two experiments.</div>
+  <h2>Position · GT yaw fixed</h2>
+  <p class="small">Top-1 Euclidean X,Z error ≤ threshold; all 7,144 object-free structural candidate cells at 0.1m grid spacing.</p>
+  <div class="table-wrap"><table id="position-metrics"><thead><tr><th scope="col">Retained objects</th><th scope="col">Recall@0.1m</th><th scope="col">Recall@0.5m</th><th scope="col">Recall@1m</th></tr></thead><tbody>
+    <tr><th scope="row">0% · 0 objects (stage control)</th><td title="2874 / 2880">99.792%</td><td title="2880 / 2880">100.000%</td><td title="2880 / 2880">100.000%</td></tr>
+    <tr><th scope="row">25% · 49 objects</th><td title="798 / 2880">27.708%</td><td title="1068 / 2880">37.083%</td><td title="1128 / 2880">39.167%</td></tr>
+    <tr><th scope="row">50% · 98 objects</th><td title="282 / 2880">9.792%</td><td title="330 / 2880">11.458%</td><td title="468 / 2880">16.250%</td></tr>
+    <tr><th scope="row">75% · 147 objects</th><td title="30 / 2880">1.042%</td><td title="66 / 2880">2.292%</td><td title="72 / 2880">2.500%</td></tr>
+    <tr><th scope="row">100% · 196 objects</th><td title="30 / 2880">1.042%</td><td title="78 / 2880">2.708%</td><td title="78 / 2880">2.708%</td></tr>
+  </tbody></table></div>
+  <h2>Direction · GT X,Z fixed</h2>
+  <p class="small">Top-1 circular yaw error ≤ threshold; 36 direction candidates at 10° intervals. These are angular thresholds, not rank-based Recall@k.</p>
+  <div class="table-wrap"><table id="direction-metrics"><thead><tr><th scope="col">Retained objects</th><th scope="col">Within 10°</th><th scope="col">Within 30°</th><th scope="col">Within 50°</th></tr></thead><tbody>
+    <tr><th scope="row">0% · 0 objects (stage control)</th><td title="2136 / 2880">74.167%</td><td title="2826 / 2880">98.125%</td><td title="2880 / 2880">100.000%</td></tr>
+    <tr><th scope="row">25% · 49 objects</th><td title="1104 / 2880">38.333%</td><td title="1956 / 2880">67.917%</td><td title="2274 / 2880">78.958%</td></tr>
+    <tr><th scope="row">50% · 98 objects</th><td title="588 / 2880">20.417%</td><td title="1302 / 2880">45.208%</td><td title="1716 / 2880">59.583%</td></tr>
+    <tr><th scope="row">75% · 147 objects</th><td title="486 / 2880">16.875%</td><td title="1044 / 2880">36.250%</td><td title="1500 / 2880">52.083%</td></tr>
+    <tr><th scope="row">100% · 196 objects</th><td title="504 / 2880">17.500%</td><td title="1020 / 2880">35.417%</td><td title="1410 / 2880">48.958%</td></tr>
+  </tbody></table></div>
+  <p class="small">0%: independently rendered structural-stage control. 25–100%: furnished observation vs the same object-free FP bank. All rows use the same 80 positions and 36 headings. Values were reaggregated from saved per-query results; no new RIR rendering, training, or inference. Position thresholds include a 1µm floating-point tolerance. Hover over a value for its success count / 2,880. <a href="metrics.json">Download counts and source checksums (JSON)</a>.</p>
+  <details><summary>Archived likelihood viewers — original projected method, not the STFT-L1 tables above</summary>
+    <p class="small">These pre-existing viewers retain the original frozen W<sub>B</sub> projection and are kept only for historical inspection. Their predictions and numerical summaries do not correspond to the identity STFT-L1 results above.</p>
+    <ul>
+      <li>0% · <a href="objects-0/exp4/">X,Z viewer</a> · <a href="objects-0/exp5/">yaw viewer</a></li>
+      <li>25% · <a href="objects-25/exp4/">X,Z viewer</a> · <a href="objects-25/exp5/">yaw viewer</a></li>
+      <li>50% · <a href="objects-50/exp4/">X,Z viewer</a> · <a href="objects-50/exp5/">yaw viewer</a></li>
+      <li>75% · <a href="objects-75/exp4/">X,Z viewer</a> · <a href="objects-75/exp5/">yaw viewer</a></li>
+      <li>100% · <a href="objects-100/exp4/">X,Z viewer</a> · <a href="objects-100/exp5/">yaw viewer</a></li>
+    </ul>
+  </details>
+</main></body></html>

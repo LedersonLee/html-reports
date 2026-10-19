@@ -1,0 +1,254 @@
+{
+  "method": "Identity STFT-band L1 (no learned projection)",
+  "position_protocol": "Experiment 4: global X,Z search with GT yaw fixed",
+  "direction_protocol": "Experiment 5: yaw search with GT X,Z fixed",
+  "threshold_rule": "inclusive <=; position tolerance 1e-6 m for float32 boundary error",
+  "zero_percent_control": "Independent structural-stage observation vs object-free FP; reused from the held-fixed 100% run control, not furnished observations",
+  "rows": [
+    {
+      "retained_percent": 0,
+      "retained_objects": 0,
+      "condition": "object_free_observation_vs_object_free_fp",
+      "position": [
+        {
+          "threshold": 0.1,
+          "successes": 2874,
+          "total": 2880
+        },
+        {
+          "threshold": 0.5,
+          "successes": 2880,
+          "total": 2880
+        },
+        {
+          "threshold": 1.0,
+          "successes": 2880,
+          "total": 2880
+        }
+      ],
+      "direction": [
+        {
+          "threshold": 10,
+          "successes": 2136,
+          "total": 2880
+        },
+        {
+          "threshold": 30,
+          "successes": 2826,
+          "total": 2880
+        },
+        {
+          "threshold": 50,
+          "successes": 2880,
+          "total": 2880
+        }
+      ],
+      "sources": [
+        {
+          "path": "100/analysis/exp4_stft_l1_plus_wb/per_observation_metrics.csv",
+          "sha256": "a5687b27f0f1d3d1e2051347431a82e3d35f058726154c7840f202b51c7375f1"
+        },
+        {
+          "path": "100/analysis/exp5_stft_l1_plus_wb/per_observation_yaw_metrics.csv",
+          "sha256": "992a20e354b854afa43a8815e5edaf192965f13e544677f2bc84dd16a637b28b"
+        }
+      ]
+    },
+    {
+      "retained_percent": 25,
+      "retained_objects": 49,
+      "condition": "object_scene_observation_vs_object_free_fp",
+      "position": [
+        {
+          "threshold": 0.1,
+          "successes": 798,
+          "total": 2880
+        },
+        {
+          "threshold": 0.5,
+          "successes": 1068,
+          "total": 2880
+        },
+        {
+          "threshold": 1.0,
+          "successes": 1128,
+          "total": 2880
+        }
+      ],
+      "direction": [
+        {
+          "threshold": 10,
+          "successes": 1104,
+          "total": 2880
+        },
+        {
+          "threshold": 30,
+          "successes": 1956,
+          "total": 2880
+        },
+        {
+          "threshold": 50,
+          "successes": 2274,
+          "total": 2880
+        }
+      ],
+      "sources": [
+        {
+          "path": "25/analysis/exp4_stft_l1_plus_wb/per_observation_metrics.csv",
+          "sha256": "a215f03ed6006393843a44ae517f895efd3dd4c79b157bda4cc00c6ae68cf4a2"
+        },
+        {
+          "path": "25/analysis/exp5_stft_l1_plus_wb/per_observation_yaw_metrics.csv",
+          "sha256": "93f2e550b324e9969fb49ee59cf621111050cbf2292bcc02c227771e38c5b85b"
+        }
+      ]
+    },
+    {
+      "retained_percent": 50,
+      "retained_objects": 98,
+      "condition": "object_scene_observation_vs_object_free_fp",
+      "position": [
+        {
+          "threshold": 0.1,
+          "successes": 282,
+          "total": 2880
+        },
+        {
+          "threshold": 0.5,
+          "successes": 330,
+          "total": 2880
+        },
+        {
+          "threshold": 1.0,
+          "successes": 468,
+          "total": 2880
+        }
+      ],
+      "direction": [
+        {
+          "threshold": 10,
+          "successes": 588,
+          "total": 2880
+        },
+        {
+          "threshold": 30,
+          "successes": 1302,
+          "total": 2880
+        },
+        {
+          "threshold": 50,
+          "successes": 1716,
+          "total": 2880
+        }
+      ],
+      "sources": [
+        {
+          "path": "50/analysis/exp4_stft_l1_plus_wb/per_observation_metrics.csv",
+          "sha256": "bea5f8146cc8b7860d9c2b5c567685ffb5cc265b814c0d7a927054bc850b690c"
+        },
+        {
+          "path": "50/analysis/exp5_stft_l1_plus_wb/per_observation_yaw_metrics.csv",
+          "sha256": "8ca47438995ec03b1b6a901777360b54533291ba7547662943f00dc5e639af26"
+        }
+      ]
+    },
+    {
+      "retained_percent": 75,
+      "retained_objects": 147,
+      "condition": "object_scene_observation_vs_object_free_fp",
+      "position": [
+        {
+          "threshold": 0.1,
+          "successes": 30,
+          "total": 2880
+        },
+        {
+          "threshold": 0.5,
+          "successes": 66,
+          "total": 2880
+        },
+        {
+          "threshold": 1.0,
+          "successes": 72,
+          "total": 2880
+        }
+      ],
+      "direction": [
+        {
+          "threshold": 10,
+          "successes": 486,
+          "total": 2880
+        },
+        {
+          "threshold": 30,
+          "successes": 1044,
+          "total": 2880
+        },
+        {
+          "threshold": 50,
+          "successes": 1500,
+          "total": 2880
+        }
+      ],
+      "sources": [
+        {
+          "path": "75/analysis/exp4_stft_l1_plus_wb/per_observation_metrics.csv",
+          "sha256": "0eb6879de0791615e921b7c1f3f88b3c4798eb4c9db3fb0b71d44648698ccb13"
+        },
+        {
+          "path": "75/analysis/exp5_stft_l1_plus_wb/per_observation_yaw_metrics.csv",
+          "sha256": "46a5b763996d1534c270358d9a325eca3a888bb3b920aa4b1f39459b978da138"
+        }
+      ]
+    },
+    {
+      "retained_percent": 100,
+      "retained_objects": 196,
+      "condition": "object_scene_observation_vs_object_free_fp",
+      "position": [
+        {
+          "threshold": 0.1,
+          "successes": 30,
+          "total": 2880
+        },
+        {
+          "threshold": 0.5,
+          "successes": 78,
+          "total": 2880
+        },
+        {
+          "threshold": 1.0,
+          "successes": 78,
+          "total": 2880
+        }
+      ],
+      "direction": [
+        {
+          "threshold": 10,
+          "successes": 504,
+          "total": 2880
+        },
+        {
+          "threshold": 30,
+          "successes": 1020,
+          "total": 2880
+        },
+        {
+          "threshold": 50,
+          "successes": 1410,
+          "total": 2880
+        }
+      ],
+      "sources": [
+        {
+          "path": "100/analysis/exp4_stft_l1_plus_wb/per_observation_metrics.csv",
+          "sha256": "a5687b27f0f1d3d1e2051347431a82e3d35f058726154c7840f202b51c7375f1"
+        },
+        {
+          "path": "100/analysis/exp5_stft_l1_plus_wb/per_observation_yaw_metrics.csv",
+          "sha256": "992a20e354b854afa43a8815e5edaf192965f13e544677f2bc84dd16a637b28b"
+        }
+      ]
+    }
+  ]
+}

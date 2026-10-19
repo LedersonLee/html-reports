@@ -1,0 +1,1073 @@
+{
+  "overall": {
+    "n": 1472,
+    "positions": 185,
+    "xy_fail": 796,
+    "joint_fail": 813,
+    "yaw_only": 17,
+    "failure_rate": {
+      "n": 1472,
+      "positions": 185,
+      "rate": 0.5407608695652174,
+      "ci95": [
+        0.5032173207407243,
+        0.5766296381306713
+      ]
+    },
+    "share_of_xy_failures": 1.0,
+    "median_xy_error_m": 2.284664848197597,
+    "per_scene": {
+      "104862417_172226382": {
+        "n": 552,
+        "xy_fail": 345
+      },
+      "104862687_172226883": {
+        "n": 488,
+        "xy_fail": 182
+      },
+      "105515301_173104305": {
+        "n": 432,
+        "xy_fail": 269
+      }
+    }
+  },
+  "per_scene": {
+    "104862417_172226382": {
+      "n": 552,
+      "positions": 70,
+      "xy_fail": 345,
+      "joint_fail": 351,
+      "yaw_only": 6,
+      "failure_rate": {
+        "n": 552,
+        "positions": 70,
+        "rate": 0.625,
+        "ci95": [
+          0.5633482142857142,
+          0.6875452898550725
+        ]
+      },
+      "share_of_xy_failures": 0.4334170854271357,
+      "median_xy_error_m": 4.694140183760226,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 552,
+          "xy_fail": 345
+        },
+        "104862687_172226883": {
+          "n": 0,
+          "xy_fail": 0
+        },
+        "105515301_173104305": {
+          "n": 0,
+          "xy_fail": 0
+        }
+      }
+    },
+    "104862687_172226883": {
+      "n": 488,
+      "positions": 61,
+      "xy_fail": 182,
+      "joint_fail": 187,
+      "yaw_only": 5,
+      "failure_rate": {
+        "n": 488,
+        "positions": 61,
+        "rate": 0.3729508196721312,
+        "ci95": [
+          0.29713114754098363,
+          0.45189549180327865
+        ]
+      },
+      "share_of_xy_failures": 0.228643216080402,
+      "median_xy_error_m": 0.31622776601683766,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 0,
+          "xy_fail": 0
+        },
+        "104862687_172226883": {
+          "n": 488,
+          "xy_fail": 182
+        },
+        "105515301_173104305": {
+          "n": 0,
+          "xy_fail": 0
+        }
+      }
+    },
+    "105515301_173104305": {
+      "n": 432,
+      "positions": 54,
+      "xy_fail": 269,
+      "joint_fail": 275,
+      "yaw_only": 6,
+      "failure_rate": {
+        "n": 432,
+        "positions": 54,
+        "rate": 0.6226851851851852,
+        "ci95": [
+          0.5589699074074074,
+          0.6875
+        ]
+      },
+      "share_of_xy_failures": 0.3379396984924623,
+      "median_xy_error_m": 4.283091991687771,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 0,
+          "xy_fail": 0
+        },
+        "104862687_172226883": {
+          "n": 0,
+          "xy_fail": 0
+        },
+        "105515301_173104305": {
+          "n": 432,
+          "xy_fail": 269
+        }
+      }
+    }
+  },
+  "direct_evidence": {
+    "xy_fail_with_accurate_ray_and_selected_map_similar": 418,
+    "xy_fail_with_selected_map_similar": 445,
+    "queries_with_capped_gt_ray": 83,
+    "xy_fail_with_capped_gt_ray": 41
+  },
+  "categories": {
+    "close_up": {
+      "label": "Close-up view proxy",
+      "n": 305,
+      "positions": 117,
+      "xy_fail": 268,
+      "joint_fail": 268,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 305,
+        "positions": 117,
+        "rate": 0.8786885245901639,
+        "ci95": [
+          0.8395972686733556,
+          0.9160695735947055
+        ]
+      },
+      "share_of_xy_failures": 0.33668341708542715,
+      "median_xy_error_m": 6.8447059834590425,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 109,
+          "xy_fail": 99
+        },
+        "104862687_172226883": {
+          "n": 73,
+          "xy_fail": 62
+        },
+        "105515301_173104305": {
+          "n": 123,
+          "xy_fail": 107
+        }
+      }
+    },
+    "corner": {
+      "label": "Visible corner proxy",
+      "n": 90,
+      "positions": 58,
+      "xy_fail": 69,
+      "joint_fail": 69,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 90,
+        "positions": 58,
+        "rate": 0.7666666666666667,
+        "ci95": [
+          0.670388986013986,
+          0.8553333333333333
+        ]
+      },
+      "share_of_xy_failures": 0.08668341708542714,
+      "median_xy_error_m": 6.383919591951729,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 25,
+          "xy_fail": 23
+        },
+        "104862687_172226883": {
+          "n": 31,
+          "xy_fail": 21
+        },
+        "105515301_173104305": {
+          "n": 34,
+          "xy_fail": 25
+        }
+      }
+    },
+    "similar_layout": {
+      "label": "Similar structural-ray signature",
+      "n": 1030,
+      "positions": 181,
+      "xy_fail": 718,
+      "joint_fail": 731,
+      "yaw_only": 13,
+      "failure_rate": {
+        "n": 1030,
+        "positions": 181,
+        "rate": 0.6970873786407767,
+        "ci95": [
+          0.6617413210376704,
+          0.7300690317102884
+        ]
+      },
+      "share_of_xy_failures": 0.9020100502512562,
+      "median_xy_error_m": 4.912214450449026,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 406,
+          "xy_fail": 308
+        },
+        "104862687_172226883": {
+          "n": 280,
+          "xy_fail": 171
+        },
+        "105515301_173104305": {
+          "n": 344,
+          "xy_fail": 239
+        }
+      }
+    },
+    "unclassified": {
+      "label": "Other / undetermined",
+      "n": 430,
+      "positions": 132,
+      "xy_fail": 75,
+      "joint_fail": 79,
+      "yaw_only": 4,
+      "failure_rate": {
+        "n": 430,
+        "positions": 132,
+        "rate": 0.1744186046511628,
+        "ci95": [
+          0.13139983610221262,
+          0.22358382506074279
+        ]
+      },
+      "share_of_xy_failures": 0.0942211055276382,
+      "median_xy_error_m": 0.1999999999999993,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 143,
+          "xy_fail": 35
+        },
+        "104862687_172226883": {
+          "n": 203,
+          "xy_fail": 11
+        },
+        "105515301_173104305": {
+          "n": 84,
+          "xy_fail": 29
+        }
+      }
+    }
+  },
+  "overlap_combinations": {
+    "close_up": {
+      "n": 2,
+      "positions": 2,
+      "xy_fail": 1,
+      "joint_fail": 1,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 2,
+        "positions": 2,
+        "rate": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "share_of_xy_failures": 0.001256281407035176,
+      "median_xy_error_m": 4.540545623863542,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 1,
+          "xy_fail": 1
+        },
+        "104862687_172226883": {
+          "n": 1,
+          "xy_fail": 0
+        },
+        "105515301_173104305": {
+          "n": 0,
+          "xy_fail": 0
+        }
+      }
+    },
+    "close_up + corner + similar_layout": {
+      "n": 61,
+      "positions": 39,
+      "xy_fail": 55,
+      "joint_fail": 55,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 61,
+        "positions": 39,
+        "rate": 0.9016393442622951,
+        "ci95": [
+          0.8188897168405366,
+          0.9690024038461539
+        ]
+      },
+      "share_of_xy_failures": 0.06909547738693467,
+      "median_xy_error_m": 6.93541635375988,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 18,
+          "xy_fail": 18
+        },
+        "104862687_172226883": {
+          "n": 20,
+          "xy_fail": 17
+        },
+        "105515301_173104305": {
+          "n": 23,
+          "xy_fail": 20
+        }
+      }
+    },
+    "close_up + similar_layout": {
+      "n": 242,
+      "positions": 111,
+      "xy_fail": 212,
+      "joint_fail": 212,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 242,
+        "positions": 111,
+        "rate": 0.8760330578512396,
+        "ci95": [
+          0.8330885184573912,
+          0.9180502644226906
+        ]
+      },
+      "share_of_xy_failures": 0.2663316582914573,
+      "median_xy_error_m": 6.825660206777847,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 90,
+          "xy_fail": 80
+        },
+        "104862687_172226883": {
+          "n": 52,
+          "xy_fail": 45
+        },
+        "105515301_173104305": {
+          "n": 100,
+          "xy_fail": 87
+        }
+      }
+    },
+    "corner": {
+      "n": 10,
+      "positions": 10,
+      "xy_fail": 2,
+      "joint_fail": 2,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 10,
+        "positions": 10,
+        "rate": 0.2,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      },
+      "share_of_xy_failures": 0.002512562814070352,
+      "median_xy_error_m": 0.12071067811865584,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 2,
+          "xy_fail": 1
+        },
+        "104862687_172226883": {
+          "n": 4,
+          "xy_fail": 0
+        },
+        "105515301_173104305": {
+          "n": 4,
+          "xy_fail": 1
+        }
+      }
+    },
+    "corner + similar_layout": {
+      "n": 19,
+      "positions": 18,
+      "xy_fail": 12,
+      "joint_fail": 12,
+      "yaw_only": 0,
+      "failure_rate": {
+        "n": 19,
+        "positions": 18,
+        "rate": 0.631578947368421,
+        "ci95": [
+          0.3954347826086957,
+          0.8421052631578947
+        ]
+      },
+      "share_of_xy_failures": 0.01507537688442211,
+      "median_xy_error_m": 4.308131845707604,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 5,
+          "xy_fail": 4
+        },
+        "104862687_172226883": {
+          "n": 7,
+          "xy_fail": 4
+        },
+        "105515301_173104305": {
+          "n": 7,
+          "xy_fail": 4
+        }
+      }
+    },
+    "similar_layout": {
+      "n": 708,
+      "positions": 175,
+      "xy_fail": 439,
+      "joint_fail": 452,
+      "yaw_only": 13,
+      "failure_rate": {
+        "n": 708,
+        "positions": 175,
+        "rate": 0.6200564971751412,
+        "ci95": [
+          0.5737794882539996,
+          0.6641452386140771
+        ]
+      },
+      "share_of_xy_failures": 0.5515075376884422,
+      "median_xy_error_m": 3.9051248379533274,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 293,
+          "xy_fail": 206
+        },
+        "104862687_172226883": {
+          "n": 201,
+          "xy_fail": 105
+        },
+        "105515301_173104305": {
+          "n": 214,
+          "xy_fail": 128
+        }
+      }
+    },
+    "unclassified": {
+      "n": 430,
+      "positions": 132,
+      "xy_fail": 75,
+      "joint_fail": 79,
+      "yaw_only": 4,
+      "failure_rate": {
+        "n": 430,
+        "positions": 132,
+        "rate": 0.1744186046511628,
+        "ci95": [
+          0.13139983610221262,
+          0.22358382506074279
+        ]
+      },
+      "share_of_xy_failures": 0.0942211055276382,
+      "median_xy_error_m": 0.1999999999999993,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 143,
+          "xy_fail": 35
+        },
+        "104862687_172226883": {
+          "n": 203,
+          "xy_fail": 11
+        },
+        "105515301_173104305": {
+          "n": 84,
+          "xy_fail": 29
+        }
+      }
+    }
+  },
+  "feature_medians": {
+    "pred_gt_mae_m": {
+      "xy_success": 0.32831189909199276,
+      "xy_failure": 0.24027339500083328
+    },
+    "pred_relative_mae": {
+      "xy_success": 0.10260039768618034,
+      "xy_failure": 0.12410550867606344
+    },
+    "gt_depth_mean_m": {
+      "xy_success": 3.1682575670155613,
+      "xy_failure": 2.0108735845847563
+    },
+    "pred_depth_mean_m": {
+      "xy_success": 3.250324164581924,
+      "xy_failure": 2.068603853258412
+    },
+    "pred_depth_cv": {
+      "xy_success": 0.42163553852719565,
+      "xy_failure": 0.2946374225385222
+    },
+    "remote_signature_mae_m": {
+      "xy_success": 0.3259770165790211,
+      "xy_failure": 0.03573672608895735
+    },
+    "separated_peak_gap_z": {
+      "xy_success": 0.16919958060940632,
+      "xy_failure": 0.011496330528841359
+    },
+    "top50_spread_m": {
+      "xy_success": 3.813553532139288,
+      "xy_failure": 7.4376731922305925
+    },
+    "wall_clearance_m": {
+      "xy_success": 0.9326574283041985,
+      "xy_failure": 0.76
+    },
+    "visible_corner_m": {
+      "xy_success": 5.0,
+      "xy_failure": 5.0
+    },
+    "furnished_gt_mae_m": {
+      "xy_success": 0.3526708734421733,
+      "xy_failure": 0.20217828367203267
+    },
+    "quantization_error_m": {
+      "xy_success": 0.09999999999999964,
+      "xy_failure": 0.09999999999999964
+    },
+    "cap_fraction": {
+      "xy_success": 0.0,
+      "xy_failure": 0.0
+    },
+    "pred_training_gt40_mae_m": {
+      "xy_success": 0.21946216374635696,
+      "xy_failure": 0.14716996252536774
+    }
+  },
+  "mechanisms": {
+    "ray_accurate_ambiguous": {
+      "n": 677,
+      "positions": 168,
+      "xy_fail": 469,
+      "joint_fail": 480,
+      "yaw_only": 11,
+      "failure_rate": {
+        "n": 677,
+        "positions": 168,
+        "rate": 0.6927621861152142,
+        "ci95": [
+          0.6513798056077468,
+          0.7347958874604563
+        ]
+      },
+      "share_of_xy_failures": 0.5891959798994975,
+      "median_xy_error_m": 4.850773134253962,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 257,
+          "xy_fail": 194
+        },
+        "104862687_172226883": {
+          "n": 182,
+          "xy_fail": 119
+        },
+        "105515301_173104305": {
+          "n": 238,
+          "xy_fail": 156
+        }
+      }
+    },
+    "large_ray_mismatch": {
+      "n": 133,
+      "positions": 80,
+      "xy_fail": 85,
+      "joint_fail": 86,
+      "yaw_only": 1,
+      "failure_rate": {
+        "n": 133,
+        "positions": 80,
+        "rate": 0.6390977443609023,
+        "ci95": [
+          0.5465937657114127,
+          0.7253095238095237
+        ]
+      },
+      "share_of_xy_failures": 0.10678391959798995,
+      "median_xy_error_m": 5.685947590331801,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 57,
+          "xy_fail": 46
+        },
+        "104862687_172226883": {
+          "n": 37,
+          "xy_fail": 9
+        },
+        "105515301_173104305": {
+          "n": 39,
+          "xy_fail": 30
+        }
+      }
+    },
+    "mixed_undetermined": {
+      "n": 662,
+      "positions": 177,
+      "xy_fail": 242,
+      "joint_fail": 247,
+      "yaw_only": 5,
+      "failure_rate": {
+        "n": 662,
+        "positions": 177,
+        "rate": 0.36555891238670696,
+        "ci95": [
+          0.32202905733215087,
+          0.4166742485864252
+        ]
+      },
+      "share_of_xy_failures": 0.30402010050251255,
+      "median_xy_error_m": 0.2999999999999998,
+      "per_scene": {
+        "104862417_172226382": {
+          "n": 238,
+          "xy_fail": 105
+        },
+        "104862687_172226883": {
+          "n": 269,
+          "xy_fail": 54
+        },
+        "105515301_173104305": {
+          "n": 155,
+          "xy_fail": 83
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "closeup_threshold_m": {
+      "1.0": {
+        "n": 154,
+        "positions": 71,
+        "xy_fail": 144,
+        "joint_fail": 144,
+        "yaw_only": 0,
+        "failure_rate": {
+          "n": 154,
+          "positions": 71,
+          "rate": 0.935064935064935,
+          "ci95": [
+            0.8919338385310405,
+            0.9684589204681157
+          ]
+        },
+        "share_of_xy_failures": 0.18090452261306533,
+        "median_xy_error_m": 7.090430446899635,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 60,
+            "xy_fail": 58
+          },
+          "104862687_172226883": {
+            "n": 28,
+            "xy_fail": 22
+          },
+          "105515301_173104305": {
+            "n": 66,
+            "xy_fail": 64
+          }
+        }
+      },
+      "1.5": {
+        "n": 305,
+        "positions": 117,
+        "xy_fail": 268,
+        "joint_fail": 268,
+        "yaw_only": 0,
+        "failure_rate": {
+          "n": 305,
+          "positions": 117,
+          "rate": 0.8786885245901639,
+          "ci95": [
+            0.8395972686733556,
+            0.9160695735947055
+          ]
+        },
+        "share_of_xy_failures": 0.33668341708542715,
+        "median_xy_error_m": 6.8447059834590425,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 109,
+            "xy_fail": 99
+          },
+          "104862687_172226883": {
+            "n": 73,
+            "xy_fail": 62
+          },
+          "105515301_173104305": {
+            "n": 123,
+            "xy_fail": 107
+          }
+        }
+      },
+      "2.0": {
+        "n": 493,
+        "positions": 149,
+        "xy_fail": 390,
+        "joint_fail": 392,
+        "yaw_only": 2,
+        "failure_rate": {
+          "n": 493,
+          "positions": 149,
+          "rate": 0.7910750507099391,
+          "ci95": [
+            0.7506836529395919,
+            0.828283200176724
+          ]
+        },
+        "share_of_xy_failures": 0.4899497487437186,
+        "median_xy_error_m": 6.36003144646314,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 173,
+            "xy_fail": 152
+          },
+          "104862687_172226883": {
+            "n": 133,
+            "xy_fail": 94
+          },
+          "105515301_173104305": {
+            "n": 187,
+            "xy_fail": 144
+          }
+        }
+      }
+    },
+    "similar_signature_mae_m": {
+      "0.15": {
+        "n": 776,
+        "positions": 168,
+        "xy_fail": 610,
+        "joint_fail": 620,
+        "yaw_only": 10,
+        "failure_rate": {
+          "n": 776,
+          "positions": 168,
+          "rate": 0.7860824742268041,
+          "ci95": [
+            0.7471726825124391,
+            0.8224651393881475
+          ]
+        },
+        "share_of_xy_failures": 0.7663316582914573,
+        "median_xy_error_m": 5.859113153329655,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 294,
+            "xy_fail": 251
+          },
+          "104862687_172226883": {
+            "n": 223,
+            "xy_fail": 160
+          },
+          "105515301_173104305": {
+            "n": 259,
+            "xy_fail": 199
+          }
+        }
+      },
+      "0.3": {
+        "n": 1030,
+        "positions": 181,
+        "xy_fail": 718,
+        "joint_fail": 731,
+        "yaw_only": 13,
+        "failure_rate": {
+          "n": 1030,
+          "positions": 181,
+          "rate": 0.6970873786407767,
+          "ci95": [
+            0.6617413210376704,
+            0.7300690317102884
+          ]
+        },
+        "share_of_xy_failures": 0.9020100502512562,
+        "median_xy_error_m": 4.912214450449026,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 406,
+            "xy_fail": 308
+          },
+          "104862687_172226883": {
+            "n": 280,
+            "xy_fail": 171
+          },
+          "105515301_173104305": {
+            "n": 344,
+            "xy_fail": 239
+          }
+        }
+      },
+      "0.5": {
+        "n": 1261,
+        "positions": 185,
+        "xy_fail": 774,
+        "joint_fail": 789,
+        "yaw_only": 15,
+        "failure_rate": {
+          "n": 1261,
+          "positions": 185,
+          "rate": 0.6137985725614592,
+          "ci95": [
+            0.5791848886112212,
+            0.6479823835406664
+          ]
+        },
+        "share_of_xy_failures": 0.9723618090452262,
+        "median_xy_error_m": 3.82099463490856,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 489,
+            "xy_fail": 335
+          },
+          "104862687_172226883": {
+            "n": 367,
+            "xy_fail": 180
+          },
+          "105515301_173104305": {
+            "n": 405,
+            "xy_fail": 259
+          }
+        }
+      }
+    },
+    "corner_distance_m": {
+      "1.0": {
+        "n": 28,
+        "positions": 19,
+        "xy_fail": 21,
+        "joint_fail": 21,
+        "yaw_only": 0,
+        "failure_rate": {
+          "n": 28,
+          "positions": 19,
+          "rate": 0.75,
+          "ci95": [
+            0.5770833333333334,
+            0.9205526315789474
+          ]
+        },
+        "share_of_xy_failures": 0.026381909547738693,
+        "median_xy_error_m": 4.058070532559136,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 8,
+            "xy_fail": 7
+          },
+          "104862687_172226883": {
+            "n": 10,
+            "xy_fail": 6
+          },
+          "105515301_173104305": {
+            "n": 10,
+            "xy_fail": 8
+          }
+        }
+      },
+      "1.5": {
+        "n": 90,
+        "positions": 58,
+        "xy_fail": 69,
+        "joint_fail": 69,
+        "yaw_only": 0,
+        "failure_rate": {
+          "n": 90,
+          "positions": 58,
+          "rate": 0.7666666666666667,
+          "ci95": [
+            0.670388986013986,
+            0.8553333333333333
+          ]
+        },
+        "share_of_xy_failures": 0.08668341708542714,
+        "median_xy_error_m": 6.383919591951729,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 25,
+            "xy_fail": 23
+          },
+          "104862687_172226883": {
+            "n": 31,
+            "xy_fail": 21
+          },
+          "105515301_173104305": {
+            "n": 34,
+            "xy_fail": 25
+          }
+        }
+      },
+      "2.0": {
+        "n": 171,
+        "positions": 95,
+        "xy_fail": 121,
+        "joint_fail": 122,
+        "yaw_only": 1,
+        "failure_rate": {
+          "n": 171,
+          "positions": 95,
+          "rate": 0.7076023391812866,
+          "ci95": [
+            0.6262632978723404,
+            0.7797837218703678
+          ]
+        },
+        "share_of_xy_failures": 0.15201005025125627,
+        "median_xy_error_m": 6.003332407921453,
+        "per_scene": {
+          "104862417_172226382": {
+            "n": 55,
+            "xy_fail": 46
+          },
+          "104862687_172226883": {
+            "n": 56,
+            "xy_fail": 34
+          },
+          "105515301_173104305": {
+            "n": 60,
+            "xy_fail": 41
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "close_up": [
+      {
+        "scene_id": "104862417_172226382",
+        "sample_index": 785
+      },
+      {
+        "scene_id": "104862687_172226883",
+        "sample_index": 121
+      },
+      {
+        "scene_id": "105515301_173104305",
+        "sample_index": 908
+      }
+    ],
+    "corner": [
+      {
+        "scene_id": "104862687_172226883",
+        "sample_index": 1147
+      },
+      {
+        "scene_id": "104862417_172226382",
+        "sample_index": 853
+      },
+      {
+        "scene_id": "105515301_173104305",
+        "sample_index": 1333
+      }
+    ],
+    "similar_layout": [
+      {
+        "scene_id": "104862417_172226382",
+        "sample_index": 854
+      },
+      {
+        "scene_id": "105515301_173104305",
+        "sample_index": 391
+      },
+      {
+        "scene_id": "104862687_172226883",
+        "sample_index": 123
+      }
+    ],
+    "unclassified": [
+      {
+        "scene_id": "104862687_172226883",
+        "sample_index": 767
+      },
+      {
+        "scene_id": "105515301_173104305",
+        "sample_index": 35
+      },
+      {
+        "scene_id": "104862417_172226382",
+        "sample_index": 1148
+      }
+    ]
+  },
+  "rules": {
+    "close_up": "At least 70% of the 11 GT structural rays OR valid furnished rays are <=1.5m; furnished requires >=80% valid rays. Not simply GT wall clearance.",
+    "corner": "Two locally straight visible GT-FP wall patches, tangent angle 90+/-15deg, both perpendicular distances <=1.5m. Patches need not meet: a visible-corner proxy, not semantic ground truth.",
+    "similar_layout": "At least one candidate >2m from GT has mean absolute difference <=0.30m from the GT-nearest FP 11-ray signature, allowing all 36 yaw bins. Structural signature similarity, not proof of identical rooms.",
+    "membership": "Overlapping tags on all queries, with unclassified retained. No forced three-class assignment.",
+    "failure": "Primary: XY error >1m. Joint: XY>1m OR yaw>30deg. Yaw-only: XY<=1m AND yaw>30deg.",
+    "mechanism": "ray_accurate_ambiguous: predicted-vs-GT-nearest FP ray MAE<=0.30m and remote signature MAE<=0.30m. large_ray_mismatch: MAE>=0.75m AND relative MAE>=25%. Remaining cases mixed/undetermined. These are diagnostic patterns, not causal labels."
+  },
+  "confidence_intervals": "500 physical-position cluster bootstrap draws stratified by the 3 scenes. All yaws at a position stay together. Not an unseen-scene CI.",
+  "caveats": [
+    "Exploratory post-hoc TEST diagnostics only; no gate/model/threshold tuned for deployment, no query removed.",
+    "A tag denotes a measurable view/geometry pattern, not a proven failure cause. Tags also occur in successful queries.",
+    "Similar ray signatures need not imply semantically similar rooms; close-up and corner may themselves cause signature similarity.",
+    "Furnished-vs-structural disagreement can reflect ordinary clutter/portals and is NOT proof of bad data.",
+    "Frozen evaluation uses the original 10m DESDF cap. It is not silently replaced by 25m. Cap-hit prevalence is reported; no cap-change ablation or re-training was performed.",
+    "Localization uses 11 angular slant rays (-50..+50deg); stored training targets are 40 camera-forward depths. GT-nearest FP signature is not the exact GT pose."
+  ],
+  "provenance": {
+    "reference_records_sha256": "e3d7df16625adabb81c3e6393a43c81305d0e4c5aa7bec6efb2931cb92a78ae9",
+    "reference_summary_sha256": "b964b5656ed8a35b2973da6ce8c1c3a429f863be158a54d6c03f3a2972834af2",
+    "feature_records_sha256": "e80df60183b5463a39afbf6397caa0cea8fb4fc8cea94606d5e4e6e2801445db",
+    "split_sha256": "af1f5ded1e3cc8286b7f6fc4155f39761b0afc12c04c33313ea43f40705f2dc8",
+    "vision_epoch": 20,
+    "vision_checkpoint_sha256": "b9626c0f8b5411f365d6151e7a760b8e79fffe5e6ee2abced6caaa7705a1c36f",
+    "candidate_xy_spacing_m": 0.2,
+    "yaw_spacing_deg": 10,
+    "training_scene_count": 116,
+    "subset_test_scene_count": 3,
+    "source_sha256": "59460fca165f0c0e5502a0c88d730ba89ddc3f108737f9052d172d0f7f588fe0",
+    "scenes": {
+      "104862687_172226883": {
+        "queries": 488,
+        "rows_sha256": "1a388b1886be699b76afe2621d22e7fa0dda8094360828ba18b43a680739de32",
+        "predicted_depth_sha256": "fcc5add39887e385e67aac9fb15d03263ede2bbe41f7b018e3e4e9db0a91423d",
+        "desdf_sha256": "77f1b5c2196d84397edd308af0bec769985cf2415e6dcedb432a40d3d22483f1",
+        "training_gt40_sha256": "ef2e92924675c2df5b1c2d280cda348d9717053abc5edf773a030138055a2140",
+        "desdf_cap_m": 10.0,
+        "vision_map_decisions_reproduced": 488,
+        "map_sha256": "c5238f68e52131d02c30cc89cf63afc8153c392f3c053390a553961d8c60693c"
+      },
+      "105515301_173104305": {
+        "queries": 432,
+        "rows_sha256": "e4da322db10b136de000c1f8e2e95fa5a2bc1c45978d3d398383424ca9fb95c8",
+        "predicted_depth_sha256": "8a7b27c1211133ca924d4a7a89634671d3aaf62c2d61b96951692e9476dc68a0",
+        "desdf_sha256": "dd0ab7e580785f89a3b04eafdc0394635e511e49c8b84387161f5b729a685624",
+        "training_gt40_sha256": "cca79b1746b203432a7fadbdedf4891c1016c376069c841a7f10ec58a726e23d",
+        "desdf_cap_m": 10.0,
+        "vision_map_decisions_reproduced": 432,
+        "map_sha256": "484a7b3c74edea201494b68ec383c8e69458156105fc4f96e9f6c84ea343876b"
+      },
+      "104862417_172226382": {
+        "queries": 552,
+        "rows_sha256": "e9d9320b523065bd1ebfcfeabe61d4d3e887f6e7ad0489f1e4874b0bfd7b251a",
+        "predicted_depth_sha256": "1d94f732f6de155f4ba528732e155144ba3044b648ed483090f4b3f65b6849fd",
+        "desdf_sha256": "3ecfb6bd34f2bc9ffbee4ddde90b49f906154799ba0b38e290f39bc66a6bb5ff",
+        "training_gt40_sha256": "9503106c85146e230f0dfd60caa2abdc0b65a7d2536f4eb7f961dcf5ea24cf9e",
+        "desdf_cap_m": 10.0,
+        "vision_map_decisions_reproduced": 552,
+        "map_sha256": "9fd2b2b107d7e7fb8fb862020cbd4e8626ccef5fd3adfd4c32e75abe7cabc2e2"
+      }
+    },
+    "split_assertions_passed": true,
+    "no_training": true,
+    "no_exclusions": true
+  }
+}

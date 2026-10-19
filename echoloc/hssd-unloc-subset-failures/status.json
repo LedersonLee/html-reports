@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "queries": 1472,
+  "xy_failures": 796,
+  "yaw_only": 17,
+  "joint_failures": 813,
+  "all_vision_decisions_reproduced": true,
+  "elapsed_seconds": 9.171028852462769
+}

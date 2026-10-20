@@ -7,5 +7,15 @@
   "scenes": 1,
   "physical_locations": 80,
   "queries": 480,
-  "evaluation": "XY: GT yaw fixed; yaw: GT XY fixed; joint: search both; exact cell/bin; restricted80x36, not dense"
+  "evaluation": "XY: GT yaw fixed; yaw: GT XY fixed; joint: search both; exact cell/bin; restricted80x36, not dense",
+  "compact_tables": {
+    "added_on": "2026-10-20",
+    "layout": "Three tables: XY / yaw / joint; nine frequency rows and four feature columns",
+    "modes": ["exact cell/bin", "recall: XY <=1m / yaw <=30deg / joint both"],
+    "shared_controls": ["observation condition", "time window"],
+    "numerical_cells_checked": 864,
+    "condition_window_mode_combinations_checked": 8,
+    "verification": "Actual JavaScript model and DOM rendering/select handlers tested with a unit-test DOM; not a browser screenshot test",
+    "original_data_files_changed": false
+  }
 }

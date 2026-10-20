@@ -1,0 +1,269 @@
+{
+  "status": "complete",
+  "micro": {
+    "vision_only": {
+      "recall_0.1m": 0.14741847826086957,
+      "recall_0.5m": 0.4313858695652174,
+      "recall_1m": 0.4592391304347826,
+      "recall_1m_30deg": 0.4476902173913043,
+      "median_xy_m": 2.284664848197597,
+      "median_yaw_deg": 5.0,
+      "repair": 0,
+      "harm": 0,
+      "preserve_success": 676,
+      "preserve_failure": 796
+    },
+    "acoustic_only": {
+      "recall_0.1m": 0.03940217391304348,
+      "recall_0.5m": 0.15353260869565216,
+      "recall_1m": 0.21603260869565216,
+      "recall_1m_30deg": 0.0625,
+      "median_xy_m": 5.199029477686908,
+      "median_yaw_deg": 80.0,
+      "repair": 112,
+      "harm": 470,
+      "preserve_success": 206,
+      "preserve_failure": 684
+    },
+    "equal_weight_fusion": {
+      "recall_0.1m": 0.08899456521739131,
+      "recall_0.5m": 0.29891304347826086,
+      "recall_1m": 0.3498641304347826,
+      "recall_1m_30deg": 0.327445652173913,
+      "median_xy_m": 4.093279487022538,
+      "median_yaw_deg": 55.0,
+      "repair": 152,
+      "harm": 313,
+      "preserve_success": 363,
+      "preserve_failure": 644
+    },
+    "visual_topk_acoustic_rerank": {
+      "recall_0.1m": 0.09782608695652174,
+      "recall_0.5m": 0.37839673913043476,
+      "recall_1m": 0.43002717391304346,
+      "recall_1m_30deg": 0.41372282608695654,
+      "median_xy_m": 2.55244811231626,
+      "median_yaw_deg": 15.0,
+      "repair": 201,
+      "harm": 244,
+      "preserve_success": 432,
+      "preserve_failure": 595
+    }
+  },
+  "per_scene": {
+    "104862687_172226883": {
+      "vision_only": {
+        "recall_0.1m": 0.16598360655737704,
+        "recall_0.5m": 0.5778688524590164,
+        "recall_1m": 0.6270491803278688,
+        "recall_1m_30deg": 0.6168032786885246,
+        "median_xy_m": 0.31622776601683766,
+        "median_yaw_deg": 5.0,
+        "repair": 0,
+        "harm": 0,
+        "preserve_success": 306,
+        "preserve_failure": 182
+      },
+      "acoustic_only": {
+        "recall_0.1m": 0.04918032786885246,
+        "recall_0.5m": 0.26229508196721313,
+        "recall_1m": 0.38114754098360654,
+        "recall_1m_30deg": 0.0942622950819672,
+        "median_xy_m": 2.3021728866442674,
+        "median_yaw_deg": 85.0,
+        "repair": 44,
+        "harm": 164,
+        "preserve_success": 142,
+        "preserve_failure": 138
+      },
+      "equal_weight_fusion": {
+        "recall_0.1m": 0.13524590163934427,
+        "recall_0.5m": 0.47950819672131145,
+        "recall_1m": 0.5573770491803278,
+        "recall_1m_30deg": 0.5327868852459017,
+        "median_xy_m": 0.5521009528313445,
+        "median_yaw_deg": 10.0,
+        "repair": 54,
+        "harm": 88,
+        "preserve_success": 218,
+        "preserve_failure": 128
+      },
+      "visual_topk_acoustic_rerank": {
+        "recall_0.1m": 0.0942622950819672,
+        "recall_0.5m": 0.4733606557377049,
+        "recall_1m": 0.5717213114754098,
+        "recall_1m_30deg": 0.5491803278688525,
+        "median_xy_m": 0.6082762530298219,
+        "median_yaw_deg": 7.5,
+        "repair": 54,
+        "harm": 81,
+        "preserve_success": 225,
+        "preserve_failure": 128
+      }
+    },
+    "105515301_173104305": {
+      "vision_only": {
+        "recall_0.1m": 0.1574074074074074,
+        "recall_0.5m": 0.36342592592592593,
+        "recall_1m": 0.3773148148148148,
+        "recall_1m_30deg": 0.36342592592592593,
+        "median_xy_m": 4.283091991687771,
+        "median_yaw_deg": 85.0,
+        "repair": 0,
+        "harm": 0,
+        "preserve_success": 163,
+        "preserve_failure": 269
+      },
+      "acoustic_only": {
+        "recall_0.1m": 0.018518518518518517,
+        "recall_0.5m": 0.07407407407407407,
+        "recall_1m": 0.11574074074074074,
+        "recall_1m_30deg": 0.05555555555555555,
+        "median_xy_m": 6.706433123473088,
+        "median_yaw_deg": 82.5,
+        "repair": 28,
+        "harm": 141,
+        "preserve_success": 22,
+        "preserve_failure": 241
+      },
+      "equal_weight_fusion": {
+        "recall_0.1m": 0.06018518518518518,
+        "recall_0.5m": 0.1736111111111111,
+        "recall_1m": 0.2199074074074074,
+        "recall_1m_30deg": 0.19907407407407407,
+        "median_xy_m": 6.162345505814995,
+        "median_yaw_deg": 80.0,
+        "repair": 37,
+        "harm": 105,
+        "preserve_success": 58,
+        "preserve_failure": 232
+      },
+      "visual_topk_acoustic_rerank": {
+        "recall_0.1m": 0.09490740740740741,
+        "recall_0.5m": 0.30787037037037035,
+        "recall_1m": 0.33564814814814814,
+        "recall_1m_30deg": 0.3148148148148148,
+        "median_xy_m": 4.275386266413443,
+        "median_yaw_deg": 75.0,
+        "repair": 63,
+        "harm": 81,
+        "preserve_success": 82,
+        "preserve_failure": 206
+      }
+    },
+    "104862417_172226382": {
+      "vision_only": {
+        "recall_0.1m": 0.12318840579710146,
+        "recall_0.5m": 0.35507246376811596,
+        "recall_1m": 0.375,
+        "recall_1m_30deg": 0.3641304347826087,
+        "median_xy_m": 4.694140183760226,
+        "median_yaw_deg": 25.0,
+        "repair": 0,
+        "harm": 0,
+        "preserve_success": 207,
+        "preserve_failure": 345
+      },
+      "acoustic_only": {
+        "recall_0.1m": 0.04710144927536232,
+        "recall_0.5m": 0.11956521739130435,
+        "recall_1m": 0.14855072463768115,
+        "recall_1m_30deg": 0.03985507246376811,
+        "median_xy_m": 6.834257016395691,
+        "median_yaw_deg": 80.0,
+        "repair": 40,
+        "harm": 165,
+        "preserve_success": 42,
+        "preserve_failure": 305
+      },
+      "equal_weight_fusion": {
+        "recall_0.1m": 0.07065217391304347,
+        "recall_0.5m": 0.23731884057971014,
+        "recall_1m": 0.26811594202898553,
+        "recall_1m_30deg": 0.2463768115942029,
+        "median_xy_m": 5.390732788777423,
+        "median_yaw_deg": 80.0,
+        "repair": 61,
+        "harm": 120,
+        "preserve_success": 87,
+        "preserve_failure": 284
+      },
+      "visual_topk_acoustic_rerank": {
+        "recall_0.1m": 0.10326086956521739,
+        "recall_0.5m": 0.3496376811594203,
+        "recall_1m": 0.3786231884057971,
+        "recall_1m_30deg": 0.3713768115942029,
+        "median_xy_m": 4.144140336529988,
+        "median_yaw_deg": 35.0,
+        "repair": 84,
+        "harm": 82,
+        "preserve_success": 125,
+        "preserve_failure": 261
+      }
+    }
+  },
+  "queries": 1472,
+  "scenes": 3,
+  "interpretations": [
+    "STFT-L1: same1472queries/candidategrid; no test-fit parameters."
+  ],
+  "paired_pose_bootstrap": {
+    "acoustic_only": {
+      "delta_recall_1m": -0.24320652173913043,
+      "ci95": [
+        -0.29939408676835205,
+        -0.18825665535931568
+      ],
+      "unit": "paired physical positions, all retained yaws together",
+      "clusters": 185,
+      "caveat": "Within these3 exploratory scenes; not an unseen-scene generalization CI"
+    },
+    "equal_weight_fusion": {
+      "delta_recall_1m": -0.109375,
+      "ci95": [
+        -0.15500944792929244,
+        -0.06282094594594596
+      ],
+      "unit": "paired physical positions, all retained yaws together",
+      "clusters": 185,
+      "caveat": "Within these3 exploratory scenes; not an unseen-scene generalization CI"
+    },
+    "visual_topk_acoustic_rerank": {
+      "delta_recall_1m": -0.029211956521739132,
+      "ci95": [
+        -0.06554832709491569,
+        0.005431834453612117
+      ],
+      "unit": "paired physical positions, all retained yaws together",
+      "clusters": 185,
+      "caveat": "Within these3 exploratory scenes; not an unseen-scene generalization CI"
+    }
+  },
+  "tags": {
+    "acoustic_only_harm": 470,
+    "acoustic_only_repair": 112,
+    "acoustic_only_yaw_only": 226,
+    "acoustic_selection_failure": 676,
+    "equal_weight_fusion_harm": 313,
+    "equal_weight_fusion_repair": 152,
+    "equal_weight_fusion_yaw_only": 33,
+    "existing_geometry_QA_flag": 992,
+    "topk_exclusion": 163,
+    "vision_only_yaw_only": 17,
+    "visual_topk_acoustic_rerank_harm": 244,
+    "visual_topk_acoustic_rerank_repair": 201,
+    "visual_topk_acoustic_rerank_yaw_only": 24
+  },
+  "limitations": [
+    "Exploratory3scenes, including historicalscene5",
+    "Vision trained116scenes vs acoustic12",
+    "0.2m grid imposes a quantization ceiling at0.1m",
+    "Geometry flags are not causal attribution",
+    "Equal-weight z scores are not calibrated probabilities",
+    "Method parameters frozen from exploratory VAL; report all three methods, no test-based selection."
+  ],
+  "acoustic_tied_queries": 0,
+  "failure_analysis": {
+    "topk_exclusions": 163
+  }
+}

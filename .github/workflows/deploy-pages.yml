@@ -23,8 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Stage site (large derived arrays are lazy-loaded from GitHub raw)
+        run: |
+          mkdir -p "$RUNNER_TEMP/report-site"
+          rsync -a --exclude='.git/' --exclude='_report_data/' ./ "$RUNNER_TEMP/report-site/"
+          touch "$RUNNER_TEMP/report-site/.nojekyll"
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ${{ runner.temp }}/report-site
       - id: deployment
         uses: actions/deploy-pages@v4

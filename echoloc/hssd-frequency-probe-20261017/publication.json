@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "source_summary_sha256": "3234b44d8681b4fcd13767f364216d64cc334b31832a4436c425f84fc8fd4df2",
+  "summary_bytes_identical_after_decompression": true,
+  "query_rows_identical": true,
+  "media_paths_only_relocated": true,
+  "scenes": 1,
+  "physical_locations": 80,
+  "queries": 480,
+  "evaluation": "XY: GT yaw fixed; yaw: GT XY fixed; joint: search both; exact cell/bin; restricted80x36, not dense"
+}

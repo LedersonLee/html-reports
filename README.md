@@ -4,6 +4,9 @@ Public, static HTML reports for research experiment review.
 
 ## EchoLoc
 
+- [HSSD — Learned vs hand-crafted acoustic methods](echoloc/acoustic-methods/)
+- [HSSD — Frequency bands and Energy / Complex coherency / MSC](echoloc/hssd-frequency-probe-20261017/)
+
 - [UnLoc subset test — Failure audit, RGB, predicted/GT rays and likelihood](echoloc/hssd-unloc-subset-failures/)
 - [HSSD — Furnished / furniture-free top-down views and training 2DFP (152 scenes)](echoloc/hssd-scene-topdown-2dfp/)
 - [HSSD scene5 — Vision / Acoustic / Fusion likelihood comparison](echoloc/hssd-scene5-test-20261018/)

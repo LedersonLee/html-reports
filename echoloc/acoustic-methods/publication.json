@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "queries": 1472,
+  "source_comparison_sha256": "1aef822f54660b4fc25e445374648868fa5abff2257416687383a76de9fd226b",
+  "numerical_data_lossless_gzip": true,
+  "data_manifest": "https://raw.githubusercontent.com/LedersonLee/html-reports/main/_report_data/hssd-acoustic-methods-1aef822f5466/manifest.json",
+  "data_delivery": "GitHub raw; excluded from Pages artifact",
+  "reused_rgb_and_maps": "../hssd-unloc-subset-failures/",
+  "reused_rgb_source_and_published_hashes_verified": 1472,
+  "source_rgb_not_recopied": true
+}

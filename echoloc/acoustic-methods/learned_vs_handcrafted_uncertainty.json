@@ -1,0 +1,58 @@
+{
+  "methods": {
+    "STFT_L1": {
+      "recall_1m": {
+        "learned_minus_handcrafted": 0.028532608695652172,
+        "ci95": [
+          -0.023779606775312892,
+          0.08085110148114369
+        ]
+      },
+      "recall_1m_30deg": {
+        "learned_minus_handcrafted": 0.10529891304347826,
+        "ci95": [
+          0.06858661671402111,
+          0.14392409204702378
+        ]
+      }
+    },
+    "coherence_L2": {
+      "recall_1m": {
+        "learned_minus_handcrafted": 0.15896739130434784,
+        "ci95": [
+          0.11498855295145036,
+          0.20493021710234818
+        ]
+      },
+      "recall_1m_30deg": {
+        "learned_minus_handcrafted": 0.11616847826086957,
+        "ci95": [
+          0.07723862628902058,
+          0.15438053832521043
+        ]
+      }
+    },
+    "common_arrival_L1": {
+      "recall_1m": {
+        "learned_minus_handcrafted": 0.07065217391304347,
+        "ci95": [
+          0.022972972972972974,
+          0.12036121665112387
+        ]
+      },
+      "recall_1m_30deg": {
+        "learned_minus_handcrafted": 0.09171195652173914,
+        "ci95": [
+          0.056071717097532316,
+          0.1277336605925581
+        ]
+      }
+    }
+  },
+  "clusters": 185,
+  "draws": 2000,
+  "seed": 42,
+  "unit": "physical positions, retained yaw queries sampled together",
+  "interpretation": "Within these3testscenes; not unseen-scene generalization; exploratory, no multiple-comparison correction",
+  "learned_records_sha256": "e3d7df16625adabb81c3e6393a43c81305d0e4c5aa7bec6efb2931cb92a78ae9"
+}
